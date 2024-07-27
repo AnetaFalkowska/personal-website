@@ -18,7 +18,7 @@ export default function ResumeSection({
   innerClassName,
 }: ResumeSectionProps) {
   return (
-    <section id={id} className={twMerge("pb-10", className)}>
+    <section id={id} className={twMerge("pb-10 scroll-mt-24", className)}>
       <div className={twMerge("w-[70%] max-w-[700px] mx-auto", innerClassName)}>
         <header className="flex flex-col text-secondary-text my-9">
           <p className="text-2xl font-thin italic">{title}</p>

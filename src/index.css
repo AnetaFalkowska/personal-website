@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    body {
+        background-color: whitesmoke
+    }
+}
+
+.progress-custom {
+  @apply w-4/5 h-1 overflow-hidden rounded-lg bg-[#e9e0e4];
+}
+
+.progress-custom::-webkit-progress-bar {
+  background-color: #e9e0e4;
+}
+
+.progress-custom::-webkit-progress-value {
+  background-color: #aa2d5a;
+  border-radius: 10px;
+}
+
+.progress-custom::-moz-progress-bar {
+  background-color: #aa2d5a;
+  border-radius: 5px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;   
+}
+
+
+.slick-next {
+  /* color: #aa2d5a ; */
+}
+
+.slick-dots li button:before {
+  color: #efb2d0; /* Kolor kropek */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #762541; /* Kolor aktywnej kropki */
+}
+
+.slick-next button:before {
+    color: #aa2d5a; /* Kolor kropek */
+  }

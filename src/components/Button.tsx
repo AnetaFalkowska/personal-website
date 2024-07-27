@@ -2,7 +2,7 @@ import { cva,VariantProps } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 import { ComponentProps } from "react";
 
-export const buttonStyles = cva(["transition-colors", "text-secondary-button-text"], {
+export const buttonStyles = cva(["transition-colors", "text-secondary-button-text", "flex", "justify-center", "items-center"], {
   variants: {
     variant: {
       default: ["bg-secondary", "hover:bg-secondary-hover"],
@@ -18,15 +18,13 @@ export const buttonStyles = cva(["transition-colors", "text-secondary-button-tex
       ],
     },
     size: {
-      default: ["rounded-full", "p-2"],
+      default: ["rounded-full", "py-2", "px-8"],
       icon: [
-        "rounded-full",
+        "bg-transparent",
+        "hover:bg-transparent",
         "w-10",
         "h-10",
-        "flex",
-        "items-center",
-        "justify-center",
-        "p-2.5",
+        "p-0"
       ],
     },
   },

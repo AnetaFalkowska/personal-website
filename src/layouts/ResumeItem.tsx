@@ -8,7 +8,7 @@ export default function ResumeItem({
   description,
 }: ResumeItemProps) {
   return (
-    <div className="flex flex-col gap-3 text-lg my-4">
+    <div className="flex flex-col gap-3 text-base my-4">
       <p className="font-semibold">{timePeriod}</p>
       <p className="font-light">{description}</p>
     </div>
