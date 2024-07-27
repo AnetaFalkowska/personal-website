@@ -6,7 +6,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 flex gap-28 justify-between bg-secondary-background font-semibold px-12 pt-8 pb-6 mb-6">
+    <nav className="sticky top-0 z-50 flex gap-28 justify-between bg-secondary-background font-semibold px-12 pt-8 pb-6 mb-6">
       <NavLink to="/" className="hover:font-black">aneta__falkowska</NavLink>
       <ul className="flex gap-20">
         <div className="w-9"><li>

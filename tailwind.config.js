@@ -10,7 +10,8 @@ export default {
     extend: {
       colors: {
         secondary: {
-          background: "#ffffff",          
+          background: "#ffffff", 
+          ['background-light']: "#fcf3f7",          
           DEFAULT: "#AA2D5A",
           hover: "#8C284A",
           text: "#aa2d5a",
