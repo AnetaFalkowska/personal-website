@@ -2,19 +2,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider, { CustomArrowProps } from "react-slick";
 import { data } from "../assets/data.ts";
+import {ChevronRight, ChevronLeft} from "lucide-react"
 
 
 export default function SkillsSlider() {
 
-  function Arrow(props:CustomArrowProps) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "#aa2d5a" }}
-        onClick={onClick}
-      />
-    );
+ function SamplePrevArrow(props:CustomArrowProps) {
+    const { className, onClick } = props;
+    return(
+      <div onClick={onClick} className={`arrow ${className}`}>
+        <ChevronLeft className="w-full text-secondary-button-text"/>
+      </div>
+    )
+    }
+
+function SampleNextArrow(props:CustomArrowProps) {
+    const { className, onClick } = props;
+    return(
+      <div onClick={onClick} className={`arrow ${className}`}>
+        <ChevronRight className="w-full text-secondary-button-text"/>
+      </div>
+    )
   }
 
   const settings = {
@@ -39,8 +47,8 @@ export default function SkillsSlider() {
         }
       }
     ],
-    nextArrow: <Arrow style={{color:"red"}}/>,
-    prevArrow: <Arrow />
+    nextArrow: <SampleNextArrow/>,
+    prevArrow: <SamplePrevArrow/>
   };
 
   return (
