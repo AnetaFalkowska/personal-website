@@ -37,7 +37,7 @@ export const skills = [
   { title: "React", value: 80 },
 ];
 
-export const data = [
+export const skillData = [
   {
     title: "Lorem ipsum",
     description:
@@ -73,4 +73,24 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nunc eget tortor tempor, nec vehicula nisl rhoncus. Ut sed nisi volutpat, condimentum lectus placerat, elementum eros. Maecenas at risus eu diam bibendum consectetur. Integer sed consequat nisi. Phasellus iaculis pharetra elit in ultrices. ",
   },
+];
+
+export const projectData = [
+  {
+    id:"p1",
+    title: "Interval Timer",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nunc eget tortor tempor, nec vehicula nisl rhoncus. Ut sed nisi volutpat.",
+    languages: "HTML, CSS, JavaScript",
+    link: "",
+    image: "/IntervalTimer.PNG",  
+  },
+  {
+    id:"p2",
+    title: "Recipe keeper",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nunc eget tortor tempor, nec vehicula nisl rhoncus. Ut sed nisi volutpat.",
+    languages: "React, HTML, CSS, JavaScript",
+    link: "https://recipe-keeper-frontend.onrender.com",
+    image: "/RecipeKeeper.PNG",  
+  },
+
 ];

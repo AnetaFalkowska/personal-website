@@ -1,11 +1,12 @@
 import DeskImg from "../assets/desk.png";
 import ProfilePicture from "../assets/Aneta1.jpg";
-import Button from "../components/Button";
-import ResumeSection from "../layouts/ResumeSection";
+import Button from "../layouts/Button.js";
+import ResumeSection from "../components/ResumeSection.js";
 import { experience, education, skills } from "../assets/data.js";
-import ResumeItem from "../layouts/ResumeItem";
-import SkillItem from "../layouts/SkillItem.js";
+import ResumeItem from "../components/ResumeItem.js";
+import SkillItem from "../components/SkillItem.js";
 import { CircleArrowUp } from "lucide-react";
+import Projects from "../components/Projects.js";
 
 const scrollToTop = () => {
   document.getElementById("resume-nav").scrollIntoView({ behavior: "smooth" });
@@ -14,11 +15,11 @@ const scrollToTop = () => {
 export default function Resume() {
   return (
     <div className="w-[100%] flex flex-col">
-      <section className="flex">
+      <section className="flex  bg-secondary px-[20%]">
         <div className="flex-grow">
           <nav
             id="resume-nav"
-            className="flex justify-center bg-secondary text-secondary-button-text font-thin italic py-8 m-0 scroll-mt-24"
+            className="flex justify-center text-secondary-button-text font-thin italic py-8 m-0 scroll-mt-24"
           >
             <ul className="flex gap-8">
               <li className="text-center hover:text-gray-400 whitespace-nowrap">
@@ -40,9 +41,9 @@ export default function Resume() {
           <div className="flex-grow h-[400px] relative">
             <img
               src={DeskImg}
-              className="w-full h-full object-cover absolute top-0 left-0 z-40"
+              className="z-10 w-full h-full object-cover absolute top-0 left-0"
             />
-            <div className="absolute bottom-20 left-8 text-secondary-button-text">
+            <div className="z-20 absolute bottom-20 left-8 text-secondary-button-text">
               <p className="uppercase text-2xl font-thin tracking-widest mb-2">
                 Hello, I'm
               </p>
@@ -54,7 +55,7 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="w-[30%] max-w-[320px] flex flex-col gap-10 justify-end items-center bg-secondary text-secondary-button-text pb-12">
+        <div className="w-[30%] max-w-[320px] flex flex-col gap-10 justify-end items-center text-secondary-button-text pb-12">
           <img src={ProfilePicture} className="w-40 rounded-[50%] shadow-lg" />
           <div className="text-center text-sm">
             <p>https://github.com/AnetaFalkowska</p>
@@ -112,7 +113,6 @@ export default function Resume() {
         </ResumeSection>
       </div>
       <ResumeSection
-
         id="skills"
         title="Skills"
         description="What I bring to the table"
@@ -126,13 +126,13 @@ export default function Resume() {
         </ul>
       </ResumeSection>
       <ResumeSection
-
         id="interests"
         title="Interests"
         description="Out of office"
       >
         Lorem ipsum dolor sit amet, con
       </ResumeSection>
+      <Projects />
       <footer className="grid grid-cols-3 justify-items-center bg-secondary text-secondary-button-text text-sm py-8 px-10 m-0">
         <div>
           <p>https://github.com/AnetaFalkowska</p>

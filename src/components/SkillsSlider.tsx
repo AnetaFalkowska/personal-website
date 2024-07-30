@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider, { CustomArrowProps } from "react-slick";
-import { data } from "../assets/data.ts";
+import { skillData } from "../assets/data.ts";
 import {ChevronRight, ChevronLeft} from "lucide-react"
 
 
@@ -52,10 +52,10 @@ function SampleNextArrow(props:CustomArrowProps) {
   };
 
   return (
-    <div className="w-[75%] mx-auto p-12">
+    <div className="w-full p-12">
      
         <Slider {...settings}>
-          {data.map((d) => (
+          {skillData.map((d) => (
             <div className="bg-white h-[450px] text-black rounded-2xl p-4">
               <p className="text-xl font-semibold text-center my-5">{d.title}</p>
               <p className="">{d.description}</p>
