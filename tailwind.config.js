@@ -12,12 +12,12 @@ export default {
         secondary: {
           background: "#ffffff", 
           ['background-light']: "#fcf3f7",          
-          DEFAULT: "#AA2D5A",
-          hover: "#8C284A",
-          text: "#aa2d5a",
-          ['button-text']: "#FCF3F7",
-          dark: "#762541",
-          ['dark-hover']: "#471023"
+          DEFAULT: "#a5316a",
+          hover: "#902d5d",
+          text: "#a5316a",
+          ['button-text']: "#f9eaf4",
+          dark: "#73284c",
+          ['dark-hover']: "#45122a"
         },
       },
       fontFamily: {
@@ -28,3 +28,4 @@ export default {
   plugins: [],
 }
 
+// "#AA2D5A",

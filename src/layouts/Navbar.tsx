@@ -6,8 +6,8 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-50 flex justify-between bg-secondary-background font-semibold px-[20%] pt-8 pb-10">
-      <NavLink to="/" className="hover:font-black">aneta__falkowska</NavLink>
+    <nav className=" top-0 z-50 flex justify-between font-semibold px-[20%] pt-8 pb-10 text-secondary-button-text bg-gradient-to-r from-[#8B2750] via-[#902D5D] to-[#8B2750]">
+      <NavLink to="/" className="hover:font-black">Home</NavLink>
       <ul className="flex gap-20">
         <div className="w-9"><li>
           <HashLink
@@ -18,7 +18,7 @@ export default function Navbar() {
             }
             to="/#projects"
           >
-            projects
+            Portfolio
           </HashLink>
         </li></div>
         <div className="w-9"><li>
@@ -30,19 +30,7 @@ export default function Navbar() {
             }
             to="/resume"
           >
-            resume
-          </NavLink>
-        </li></div>
-        <div className="w-9"><li>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "underline decoration-2 font-black"
-                : "hover:font-black"
-            }
-            to="/contact"
-          >
-            contact
+            Resume
           </NavLink>
         </li></div>
       </ul>

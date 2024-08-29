@@ -5,19 +5,14 @@ import ResumeSection from "../components/ResumeSection.js";
 import { experience, education, skills } from "../assets/data.js";
 import ResumeItem from "../components/ResumeItem.js";
 import SkillItem from "../components/SkillItem.js";
-import { CircleArrowUp } from "lucide-react";
-import Projects from "../components/Projects.js";
 
-const scrollToTop = () => {
-  document.getElementById("resume-nav").scrollIntoView({ behavior: "smooth" });
-};
 
 export default function Resume() {
   return (
     <div className="w-[100%] flex flex-col">
       <section className="flex  bg-secondary px-[20%]">
         <div className="flex-grow">
-          <nav
+          {/* <nav
             id="resume-nav"
             className="flex justify-center text-secondary-button-text font-thin italic py-8 m-0 scroll-mt-24"
           >
@@ -37,7 +32,7 @@ export default function Resume() {
                 <a href="#interests">Interests</a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
           <div className="flex-grow h-[400px] relative">
             <img
               src={DeskImg}
@@ -83,7 +78,7 @@ export default function Resume() {
       </ResumeSection>
       <div
         id="education"
-        className="w-[70%] max-w-[700px] mx-auto grid grid-cols-2 gap-8 scroll-mt-24"
+        className="w-[60%] mx-auto grid grid-cols-2 gap-8 scroll-mt-24"
       >
         <ResumeSection
           innerClassName="w-full "
@@ -132,19 +127,7 @@ export default function Resume() {
       >
         Lorem ipsum dolor sit amet, con
       </ResumeSection>
-      <Projects />
-      <footer className="grid grid-cols-3 justify-items-center bg-secondary text-secondary-button-text text-sm py-8 px-10 m-0">
-        <div>
-          <p>https://github.com/AnetaFalkowska</p>
-          <p>502 394 679</p>
-        </div>
-        <Button variant="inverse" href="">
-          Download CV
-        </Button>
-        <Button size="icon" onClick={scrollToTop}>
-          <CircleArrowUp size={40} />
-        </Button>
-      </footer>
+
     </div>
   );
 }

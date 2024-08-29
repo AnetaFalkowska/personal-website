@@ -14,7 +14,7 @@ export default function ProjectCard({
   link,
 }: ProjectCardProps) {
   return (
-    <div className="bg-white w-full gap-8 flex flex-col xl:flex-row justify-start items-center xl:items-start rounded-lg shadow-md m-4 p-8">
+    <div className="bg-[#fbf4f9] w-full gap-8 flex flex-col xl:flex-row justify-start items-center xl:items-start rounded-lg shadow-md m-4 p-8">
       <img
         src={image}
         alt={`${title} screenshot`}

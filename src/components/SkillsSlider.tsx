@@ -28,7 +28,7 @@ function SampleNextArrow(props:CustomArrowProps) {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
@@ -52,11 +52,16 @@ function SampleNextArrow(props:CustomArrowProps) {
   };
 
   return (
-    <div className="w-full p-12">
-     
-        <Slider {...settings}>
+    <div className="w-full bg-[#f9f7f7] px-[20%] pb-14 pt-3 text-center">
+     <header className="flex flex-col text-secondary-text my-9">
+          <p className="text-2xl font-thin italic">Proffesional Skills</p>
+          <p className="uppercase text-sm font-thin tracking-widest">
+            What I bring to the table
+          </p>
+          </header>
+     <Slider {...settings}>
           {skillData.map((d) => (
-            <div className="bg-white h-[450px] text-black rounded-2xl p-4">
+            <div className="bg-white h-[350px] text-black rounded-2xl p-4 mb-5">
               <p className="text-xl font-semibold text-center my-5">{d.title}</p>
               <p className="">{d.description}</p>
             </div>
