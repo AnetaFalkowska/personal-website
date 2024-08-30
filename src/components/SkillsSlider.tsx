@@ -50,7 +50,7 @@ export default function SkillsSlider() {
   };
 
   return (
-    <div className="w-full bg-white px-[20%] pb-14 py-14 mb-12 text-center">
+    <div className="w-full bg-[#f8f8fa] px-[20%] pb-14 py-14 mb-12 text-center">
       <header className="flex flex-col text-secondary-text my-9">
         <p className="text-2xl font-thin italic">Proffesional Skills</p>
         <p className="uppercase text-sm font-thin tracking-widest">
