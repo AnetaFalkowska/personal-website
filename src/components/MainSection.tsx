@@ -35,7 +35,7 @@ function ProfileSection() {
           />
         </div>
       </div>
-      <div className="px-[20%] py-14 text-center">
+      <div className="max-w-[730px] mx-auto py-14 text-center">
         <header className="flex flex-col text-secondary-text my-9">
           <p className="text-2xl font-thin italic">About Me</p>
           <p className="uppercase text-sm font-thin tracking-widest">
@@ -64,10 +64,11 @@ function ProfileSection() {
 
 function TechnologyList() {
   return (
-    <div className="relative w-full h-[420px]">
+    <div className="relative w-full h-[650px] sm:h-[450px] lg:h-[390px]">
       <img src={code} className="w-full h-full object-cover" />
       <div className="bg-[#f4d6e9] w-full h-full absolute top-0 left-0 opacity-90"></div>
-      <div className="flex gap-4 justify-around flex-wrap py-10 absolute top-0 left-0 px-[20%]">
+      {/* <div className="max-w-[1100px] w-[90%] grid gap-4 grid-cols-[repeat(auto-fill,minmax(100px,200px))] justify-items-center py-10 absolute top-0 left-[50%] translate-x-[-50%]"> */}
+      <div className="max-w-[1100px] w-[97%] md:w-[90%] flex gap-x-2 gap-y-1 xl:gap-y-4 justify-center flex-wrap absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
         {technologies.map((el, index) => (
           <TechnologyItem key={index} {...el} />
         ))}
@@ -84,12 +85,16 @@ type ResumeItemProps = {
 
 function TechnologyItem({ name, icon, description }: ResumeItemProps) {
   return (
-    <div className="group w-60 text-center">
-      <img src={icon} className="mx-auto w-10 h-10" />
-      <p className="mt-2 text-lg">{name}</p>
-      <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
+    <div className="group w-32 lg:w-48 xl:w-60 text-center rounded-lg custom-inset-shadow-2 p-2">
+      <img src={icon} className="mx-auto w-10 h-10 group-hover:opacity-100" />
+      <p className="mt-2 text-base lg:text-lg">{name}</p>
+      <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs xl:text-sm">
         {description}
       </p>
     </div>
   );
+}
+
+{
+  /* <div className="max-w-[1100px] w-[90%] flex gap-x-1 gap-y-1 xl:gap-y-4 justify-around flex-wrap py-10 absolute top-0 left-[50%] translate-x-[-50%]"></div> */
 }

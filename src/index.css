@@ -8,6 +8,19 @@
   }
 }
 
+@layer components {
+  .custom-inset-shadow {
+    @apply shadow-inner;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), 
+                inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+  }
+  .custom-inset-shadow-2 {
+    @apply shadow-inner;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
 .progress-custom {
   @apply w-4/5 h-1 overflow-hidden rounded-lg bg-[#e9e0e4];
 }
