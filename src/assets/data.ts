@@ -7,7 +7,6 @@ import gitIcon from "../assets/techIcons/git.png";
 import twIcon from "../assets/techIcons/tailwind.png";
 import tsIcon from "..//assets/techIcons/typescript.png";
 
-
 export const education = [
   {
     time: "2022 - 2024",
@@ -95,8 +94,52 @@ export const projectData = [
     id: "p1",
     title: "Interval Timer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nunc eget tortor tempor, nec vehicula nisl rhoncus. Ut sed nisi volutpat.",
-    languages: "HTML, CSS, JavaScript",
+      "Interval Timer is a functional app for managing workout intervals. It allows users to create and customize workout sessions, set times for preparation, work, rest, and cool-down, as well as the number of sets. The app provides options to save, edit, and delete predefined sessions.",
+    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
+    keyFeatures: [
+      {
+        name: "Responsive Design",
+        description: "Optimized for both mobile and desktop devices.",
+      },
+      {
+        name: "Interval Customization",
+        description: "Set and adjust interval times.",
+      },
+      {
+        name: "Session Management",
+        description: "Add, edit, and delete workout sessions.",
+      },
+      {
+        name: "Easy Workout Start",
+        description: "Option to start a workout immediately.",
+      },
+      {
+        name: "Sound Alerts",
+        description:
+          " Notifies users with sound at the start and end of intervals.",
+      },
+      {
+        name: "Countdown Animation",
+        description: "Displays a visual countdown for each interval.",
+      },
+      {
+        name: "Pause & Resume",
+        description: "Lets users pause and resume the timer as needed.",
+      },
+      {
+        name: "Reset Timer",
+        description:
+          "A reset button to restart the session from the beginning.",
+      },
+      {
+        name: "Keyboard Shortcuts",
+        description: "Enables timer control via keyboard commands.",
+      },
+      {
+        name: "Local Storage",
+        description: "Saves user settings and preferences for future sessions.",
+      },
+    ],
     link: "",
     image: "/IntervalTimer.PNG",
   },
@@ -104,13 +147,111 @@ export const projectData = [
     id: "p2",
     title: "Recipe keeper",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nunc eget tortor tempor, nec vehicula nisl rhoncus. Ut sed nisi volutpat.",
-    languages: "React, HTML, CSS, JavaScript",
+      "Recipe Keeper is a comprehensive web application for managing and discovering recipes. It allows users to create, edit, and delete their own recipes, as well as search for recipes both locally and online. The application uses React Router for seamless navigation and dynamic content loading.",
+    techStack: [
+      "React",
+      "React Router",
+      "HTML",
+      "CSS3",
+      "JavaScript",
+      "API Integration",
+    ],
+    keyFeatures: [
+      {
+        name: "Responsive Design",
+        description: "Optimized for both mobile and desktop views.",
+      },
+      {
+        name: "Asynchronous Data Fetching",
+        description: "Utilizes React hooks for asynchronous data fetching.",
+      },
+      {
+        name: "Recipe Management",
+        description: "Users can create, modify, and remove recipes.",
+      },
+      {
+        name: "Local Recipe Search",
+        description: "Search personal recipes by title or ingredients.",
+      },
+      {
+        name: "Online Recipe Search",
+        description: "Search external recipe databases online.",
+      },
+      {
+        name: "Random Recipe",
+        description: "Display a random recipe for users to try.",
+      },
+
+      {
+        name: "Search Interface",
+        description: "Intuitive search bar for local and online recipes.",
+      },
+      {
+        name: "Recipe Form Validation",
+        description:
+          "Ensure recipe titles are unique and meet length requirements; validate form data.",
+      },
+      {
+        name: "Confirmation Modal",
+        description: "Confirm actions like canceling recipe edits.",
+      },
+      {
+        name: "Random Recipe",
+        description: "Display a random recipe for users to try.",
+      },
+
+      {
+        name: "Error Handling",
+        description: "Custom error pages to handle different types of errors.",
+      },
+    ],
     link: "https://recipe-keeper-frontend.onrender.com",
     image: "/RecipeKeeper.PNG",
   },
+  {
+    id: "p3",
+    title: "Portfolio Web Application",
+    description:
+      "The Portfolio Web Application is a modern website designed to showcase my skills, professional experiences, and projects. The application uses React Router for seamless navigation between different sections, such as Home, Projects, Resume, and Contact. The homepage features my profile, technical skills, and an overview of my projects.",
+    techStack: [
+      "React",
+      "React Router",
+      "HTML",
+      "CSS3",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript",
+    ],
+    keyFeatures: [
+      {
+        name: "Responsive Design",
+        description: "Optimized for both mobile and desktop views.",
+      },
+      {
+        name: "Router Navigation",
+        description:
+          "Seamless navigation between pages enabled by React Router.",
+      },
+      {
+        name: "Custom Skill Slider",
+        description:
+          "Interactive skill slider built with react-slick, featuring custom navigation arrows.",
+      },
+      {
+        name: "Button Styling with Tailwind Merge",
+        description:
+          "Button styled using twMerge and buttonStyles, allowing centralized style management and consistency across the application.",
+      },
+      {
+        name: "Tailwind CSS Styling",
+        description:
+          "Utilizes Tailwind CSS for clean, responsive design and easy maintenance.",
+      },
+    ],
+    link: "https://recipe-keeper-frontend.onrender.com",
+    image: "/Portfolio.PNG",
+  },
 ];
-
 
 export const technologies = [
   {
@@ -123,7 +264,7 @@ export const technologies = [
     name: "JavaScript",
     icon: jsIcon,
     description:
-      "Implementing asynchronous operations using Promises and async/await."
+      "Implementing asynchronous operations using Promises and async/await.",
   },
   {
     name: "TypeScript",
@@ -134,14 +275,12 @@ export const technologies = [
   {
     name: "HTML5",
     icon: htmlIcon,
-    description:
-      "Crafting structured and semantic web pages.",
+    description: "Crafting structured and semantic web pages.",
   },
   {
     name: "CSS3",
     icon: cssIcon,
-    description:
-      "Creating advanced layouts with Flexbox and CSS Grid.",
+    description: "Creating advanced layouts with Flexbox and CSS Grid.",
   },
   {
     name: "Git",
@@ -158,7 +297,6 @@ export const technologies = [
   {
     name: "Tailwind CSS",
     icon: twIcon,
-    description:
-      "Rapidly building responsive designs with Tailwind CSS.",
+    description: "Rapidly building responsive designs with Tailwind CSS.",
   },
 ];

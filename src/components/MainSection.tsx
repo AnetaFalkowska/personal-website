@@ -42,7 +42,7 @@ function ProfileSection() {
             My background
           </p>
         </header>
-        <main className="text-gray-800">
+        <main className="text-gray-600">
           Frontend Developer with a strong foundation in project management and
           key account expertise. Currently focused on building responsive web
           applications using React, JavaScript HTML and CSS. I excel in
@@ -85,7 +85,7 @@ type ResumeItemProps = {
 
 function TechnologyItem({ name, icon, description }: ResumeItemProps) {
   return (
-    <div className="group w-32 lg:w-48 xl:w-60 text-center rounded-lg custom-inset-shadow-2 p-2">
+    <div className="group w-32 lg:w-48 xl:w-60 text-center rounded-2xl custom-inset-shadow-2 p-2">
       <img src={icon} className="mx-auto w-10 h-10 group-hover:opacity-100" />
       <p className="mt-2 text-base lg:text-lg">{name}</p>
       <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs xl:text-sm">
