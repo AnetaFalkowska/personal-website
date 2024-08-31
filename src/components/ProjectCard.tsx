@@ -22,7 +22,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <>
-      <div className="relative bg-white border-t-4 border-secondary p-6 pt-16 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex flex-col lg:flex-row">
+      <div className="relative md:w-[90%] mx-auto bg-white border-t-4 border-secondary mb-14 p-6 pt-16 rounded-lg shadow-md flex flex-col lg:flex-row">
         <img
           src={image}
           alt={`${title} screenshot`}

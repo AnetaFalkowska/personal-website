@@ -4,6 +4,7 @@ import { technologies } from "../assets/data.ts";
 import SkillsSlider from "./SkillsSlider.tsx";
 import Projects from "./Projects.tsx";
 import ProfilePicture from "../assets/Aneta1.jpg";
+import Container from "../layouts/Container.tsx";
 import dots from "../assets/dots.jpg";
 import code from "../assets/code.jpg";
 
@@ -21,22 +22,23 @@ export function MainSection() {
 function ProfileSection() {
   return (
     <>
-      <div className="relative w-full h-[300px]">
+      <div className="relative w-full h-[200px] sm:h-[280px]">
         <img src={dots} className="w-full h-full object-cover" />
         <div className="bg-[#AA2D5A] w-full h-full absolute top-0 left-0 opacity-80"></div>
-        <div className="bg-transparent absolute top-0 left-[50%] translate-x-[-50%] text-center">
-          <div className="mx-auto py-10 text-secondary-button-text">
-            <p className="text-3xl font-black mb-5">Aneta Falkowska</p>
-            <p className="italic text-4xl">React Web Developer</p>
+        <div className="bg-transparent absolute top-0 left-[50%] -translate-x-[50%] text-center">
+          <div className="my-3 sm:my-8 text-secondary-button-text">
+            <p className="text-2xl sm:text-3xl font-black mb-5">Aneta Falkowska</p>
+            <p className="italic text-3xl sm:text-4xl whitespace-nowrap">React Web Developer</p>
           </div>
           <img
             src={ProfilePicture}
-            className="w-48 rounded-[50%] border-8 border-white mx-auto"
+            className="w-48 rounded-[50%] border-8 border-secondary-background outline outline-2 outline-offset-[-9px] outline-secondary-background mx-auto"
           />
         </div>
       </div>
-      <div className="max-w-[730px] mx-auto py-14 text-center">
-        <header className="flex flex-col text-secondary-text my-9">
+      <Container maxWidth="max-w-[730px]">
+      <div className="py-20 text-center">
+        <header className="text-secondary-text mb-9 mt-12 sm:mt-9">
           <p className="text-2xl font-thin italic">About Me</p>
           <p className="uppercase text-sm font-thin tracking-widest">
             My background
@@ -58,6 +60,8 @@ function ProfileSection() {
           Explore porfolio
         </a>
       </div>
+      </Container>
+      
     </>
   );
 }

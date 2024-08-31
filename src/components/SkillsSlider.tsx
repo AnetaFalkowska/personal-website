@@ -50,16 +50,17 @@ export default function SkillsSlider() {
   };
 
   return (
-    <div className="w-full bg-[#f8f8fa] px-[20%] pb-14 py-14 mb-12 text-center">
+    <div className="w-full bg-[#f8f8fa] px-[20%] sm:max-lg:px-[12%] py-14 mb-12 text-center">      
       <header className="flex flex-col text-secondary-text my-9">
         <p className="text-2xl font-thin italic">Proffesional Skills</p>
         <p className="uppercase text-sm font-thin tracking-widest">
           What I bring to the table
         </p>
       </header>
+      <div className="max-w-[1100px] mx-auto">
       <Slider {...settings}>
         {skillData.map((d) => (
-          <div className="rounded-2xl p-4 mb-5">
+          <div className="p-0 sm:p-4 mb-5">
             <h3 className="h-18 sm:h-24 md:h-16 text-lg xl:text-xl font-semibold text-center text-gray-800 pb-3 sm:pb-0">
               {d.title}
             </h3>
@@ -69,6 +70,7 @@ export default function SkillsSlider() {
           </div>
         ))}
       </Slider>
+      </div>      
     </div>
   );
 }

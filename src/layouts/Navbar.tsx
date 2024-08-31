@@ -1,16 +1,20 @@
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
+import Container from "./Container"
 
 export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className=" top-0 z-50 flex justify-between font-semibold px-[20%] pt-8 pb-10 text-secondary-button-text bg-gradient-to-r from-[#8B2750] via-[#902D5D] to-[#8B2750]">
+
+    <div className="bg-gradient-to-r from-[#8B2750] via-[#902D5D] to-[#8B2750]">
+      <Container>
+      <nav className="flex justify-between gap-8 font-semibold py-8 text-secondary-button-text">
       <NavLink to="/" className="hover:font-black">
         Home
       </NavLink>
-      <ul className="flex gap-20">
+      <ul className="flex gap-8 lg:gap-16">
         <div className="w-13">
           <li>
             <HashLink
@@ -25,7 +29,7 @@ export default function Navbar() {
             </HashLink>
           </li>
         </div>
-        <div className="w-9">
+        <div className="w-13">
           <li>
             <NavLink
               className={({ isActive }) =>
@@ -41,5 +45,9 @@ export default function Navbar() {
         </div>
       </ul>
     </nav>
+      </Container>
+
+    </div>
+    
   );
 }

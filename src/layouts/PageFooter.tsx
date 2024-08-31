@@ -1,25 +1,38 @@
 import { CircleArrowUp } from "lucide-react";
 import Button from "../layouts/Button.js";
+import Container from "./Container.js";
 
-const scrollToTop = () => {
-  document.getElementById("resume-nav").scrollIntoView({ behavior: "smooth" });
-};
+// const scrollToTop = () => {
+//   document.getElementById("resume-nav").scrollIntoView({ behavior: "smooth" });
+// };
 
 export default function PageFooter() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-gradient-to-r from-[#8B2750] via-[#902D5D] to-[#8B2750]">
-      <div className="w-[60%] flex justify-between text-secondary-button-text text-sm py-8 mx-auto">
-        <div>
-          <p>https://github.com/AnetaFalkowska</p>
-          <p>502 394 679</p>
+      <Container>
+        <div className="flex justify-center gap-6 sm:justify-between text-secondary-button-text text-sm py-8 mx-auto">
+          <div className="w-auto sm:w-48">
+            <p>&copy; 2024 Aneta Falkowska.</p>
+            <p> All rights reserved.</p>
+            {/* <p>https://github.com/AnetaFalkowska</p>
+            <p>502 394 679</p> */}
+          </div>
+          <div className="w-auto sm:w-48">
+            <Button className="mx-auto" variant="inverse" href="">
+              Download CV
+            </Button>
+          </div>
+          <div className="w-auto sm:w-48">
+            <Button className="ml-auto" size="icon" onClick={scrollToTop}>
+              <CircleArrowUp size={40} />
+            </Button>
+          </div>
         </div>
-        <Button variant="inverse" href="">
-          Download CV
-        </Button>
-        <Button size="icon" onClick={scrollToTop}>
-          <CircleArrowUp size={40} />
-        </Button>   
-      </div>
+      </Container>
     </footer>
   );
 }
