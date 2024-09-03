@@ -21,6 +21,16 @@
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), 
                 inset -2px -2px 5px rgba(255, 255, 255, 0.3);
   }
+  .custom-inset-shadow-3 {
+    @apply shadow-inner;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), 
+                inset -3px -3px 5px rgba(165, 49, 106, 0.3);
+  }
+  .custom-inset-shadow-4 {
+    @apply shadow-inner;
+    box-shadow: inset 5px 5px 10px rgba(165, 49, 106, 0.3), 
+                inset -3px -3px 5px rgba(255, 255, 255, 1);
+  }
 }
 
 .progress-custom {

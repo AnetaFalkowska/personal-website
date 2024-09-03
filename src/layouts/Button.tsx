@@ -24,6 +24,13 @@ export const buttonStyles = cva(
           "hover:bg-secondary-button-text-hover",
           "text-secondary",
         ],
+        outline: [
+          "border",
+          "border-[rgba(165, 49, 106, 0.3)",
+          "bg-white",
+          "hover:bg-secondary-button-text-hover",
+          "text-secondary",
+        ],
       },
       size: {
         default: ["rounded-full", "py-2", "px-8"],

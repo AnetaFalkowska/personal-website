@@ -25,6 +25,7 @@ export const education = [
     description: "II Liceum Ogólnokształcące profil matematyczno-informatyczny",
   },
 ];
+
 export const experience = [
   { time: "Oct. 2008 - Oct. 2022", description: "Customer Service Manager" },
   {
@@ -249,7 +250,7 @@ export const projectData = [
       },
     ],
     link: "https://recipe-keeper-frontend.onrender.com",
-    image: "/Portfolio.PNG",
+    image: "/Portfolio-desktop.PNG",
   },
 ];
 
