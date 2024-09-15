@@ -28,10 +28,10 @@ export default function SkillsSlider() {
     infinite: true,
     speed: 800,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -50,7 +50,7 @@ export default function SkillsSlider() {
   };
 
   return (
-    <div className="w-full bg-[#f8f8fa] px-[20%] sm:max-lg:px-[12%] py-14 mb-12 text-center">      
+    <div className="w-full bg-secondary-section px-[20%] sm:max-lg:px-[12%] py-14 mb-12 text-center">
       <header className="flex flex-col text-secondary-text my-9">
         <p className="text-2xl font-thin italic">Proffesional Skills</p>
         <p className="uppercase text-sm font-thin tracking-widest">
@@ -58,19 +58,25 @@ export default function SkillsSlider() {
         </p>
       </header>
       <div className="max-w-[1100px] mx-auto">
-      <Slider {...settings}>
-        {skillData.map((d) => (
-          <div className="p-0 sm:p-4 mb-5">
-            <h3 className="h-18 sm:h-24 md:h-16 text-lg xl:text-xl font-semibold text-center text-gray-800 pb-3 sm:pb-0">
-              {d.title}
-            </h3>
-            <p className="text-gray-600 mb-4 text-sm md:text-base">
-              {d.description}
-            </p>
-          </div>
-        ))}
-      </Slider>
-      </div>      
+        <Slider {...settings}>
+          {skillData.map((d) => (
+            <div className="h-full p-0 sm:p-1 mb-2">
+              {/* <h3 className="h-18 sm:h-24 md:h-16 text-md xl:text-xl font-semibold text-center text-gray-800 pb-3 sm:pb-0">
+                {d.title}
+              </h3>
+              <p className="text-gray-600 mb-1 text-sm md:text-base">
+                {d.description}
+              </p> */}
+              <h3 className="font-semibold text-center text-gray-800 h-16 slider-sm:max-sm:h-20 lg:h-20 xl:text-lg p-0 sm:p-1">
+                {d.title}
+              </h3>
+              <p className="text-gray-600 text-sm xl:text-base">
+                {d.description}
+              </p>
+            </div>
+          ))}
+        </Slider>        
+      </div>
     </div>
   );
 }

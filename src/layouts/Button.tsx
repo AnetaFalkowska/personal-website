@@ -3,38 +3,31 @@ import { twMerge } from "tailwind-merge";
 import { ComponentProps } from "react";
 
 export const buttonStyles = cva(
-  [
-    "transition-colors",
-    "text-secondary-button-text",
-    "flex",
-    "justify-center",
-    "items-center",
-  ],
+  ["transition-colors", "flex", "justify-center", "items-center", "font-bold"],
   {
     variants: {
       variant: {
-        default: ["bg-secondary", "hover:bg-secondary-hover"],
-        dark: [
-          "bg-secondary-dark",
-          "hover:bg-secondary-dark-hover",
-          "text-secondary",
+        default: [
+          "bg-secondary",
+          "text-secondary-button-text",
+          "hover:bg-secondary-hover",
         ],
         inverse: [
           "bg-secondary-button-text",
-          "hover:bg-secondary-button-text-hover",
           "text-secondary",
+          "hover:bg-secondary-background",
         ],
         outline: [
           "border",
-          "border-[rgba(165, 49, 106, 0.3)",
-          "bg-white",
-          "hover:bg-secondary-button-text-hover",
+          "border-secondary",
+          "bg-secondary-background",
           "text-secondary",
+          "hover:bg-secondary-button-text",
         ],
       },
       size: {
         default: ["rounded-full", "py-2", "px-8"],
-        icon: ["bg-transparent", "hover:bg-transparent", "w-10", "h-10", "p-0"],
+        icon: ["bg-transparent", "hover:bg-transparent","hover:text-secondary-background", "size-10", "p-0"],
       },
     },
     defaultVariants: {

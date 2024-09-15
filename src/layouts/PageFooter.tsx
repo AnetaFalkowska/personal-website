@@ -12,10 +12,10 @@ export default function PageFooter() {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-[#8B2750] via-[#902D5D] to-[#8B2750]">
+    <footer className="bg-gradient-to-r from-[#8B2750] via-[#902D5D] to-[#8B2750]  text-secondary-button-text text-sm">
       <Container>
-        <div className="flex justify-center gap-6 sm:justify-between text-secondary-button-text text-sm py-8 mx-auto">
-          <div className="w-auto sm:w-48">
+        <div className="flex justify-center gap-6 sm:justify-between pt-8 sm:py-8 mx-auto">
+          <div className="hidden sm:block sm:w-48">
             <p>&copy; 2024 Aneta Falkowska.</p>
             <p> All rights reserved.</p>
             {/* <p>https://github.com/AnetaFalkowska</p>
@@ -32,6 +32,7 @@ export default function PageFooter() {
             </Button>
           </div>
         </div>
+        <p className="sm:hidden text-center pb-4 pt-3">&copy; 2024 Aneta Falkowska. All rights reserved.</p>
       </Container>
     </footer>
   );

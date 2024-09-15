@@ -25,11 +25,11 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <>   
-      <div className="relative md:w-[90%] mx-auto bg-[#f8f8fa] border-t-4 border-secondary mb-14 p-6 pt-16 rounded-lg shadow-md flex flex-col lg:flex-row items-start">
+      <div className="relative md:w-[90%] mx-auto bg-secondary-section border-t-4 border-secondary mb-14 p-6 pt-16 rounded-lg shadow-md flex flex-col lg:flex-row items-start">
         <div className="relative w-auto lg:w-1/2 mb-4 lg:mb-0 lg:mr-8">
           <a
             href="#projects"
-            className="inline-block w-[80%] lg:w-full rounded-2xl shadow-[-3px_3px_3px_rgba(0,0,0,0.3)] z-5 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+            className="inline-block w-[80%] lg:w-full rounded-2xl shadow-[-3px_3px_3px_rgba(0,0,0,0.3)] z-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[-6px_6px_6px_rgba(0,0,0,0.3)] active:scale-95"
           >
               <img
               src={image}
@@ -40,7 +40,7 @@ export default function ProjectCard({
 
           <a
             href="#projects"
-            className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-2xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 shadow-[-20px_20px_20px_rgba(0,0,0,0.3)] z-20 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+            className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-2xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 shadow-[-20px_20px_20px_rgba(0,0,0,0.3)] z-20 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[-25px_25px_25px_rgba(0,0,0,0.3)] active:scale-95"
           >
             <img
               src="/Small.PNG"
@@ -50,7 +50,7 @@ export default function ProjectCard({
           </a>
           <a
             href="#projects"
-            className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-2xl top-[88%] left-[14%] shadow-[-9px_9px_9px_rgba(0,0,0,0.3)] z-10 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+            className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-2xl top-[88%] left-[14%] shadow-[-9px_9px_9px_rgba(0,0,0,0.3)] z-10 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[-13px_13px_13px_rgba(0,0,0,0.3)] active:scale-95"
           >
             <img
               src="/tablet.PNG"
@@ -99,7 +99,7 @@ export default function ProjectCard({
             href="#projects"
             className={twMerge(
               buttonStyles({ variant: "outline" }),
-              "font-bold mb-4 mr-auto w-52 custom-inset-shadow-4"
+              "mb-4 mr-auto w-52"
             )}
           >
             View on GitHub
@@ -108,14 +108,14 @@ export default function ProjectCard({
             href="#projects"
             className={twMerge(
               buttonStyles(),
-              "font-bold mb-4 mr-auto w-52 custom-inset-shadow"
+              "mb-4 mr-auto w-52"
             )}
           >
             Visit Project
           </a>
 
         </div>
-        <div className="absolute top-0 right-0 w-12 h-12 bg-secondary rounded-bl-lg custom-inset-shadow"></div>
+        <div className="absolute top-0 right-0 w-12 h-12 bg-secondary rounded-bl-lg"></div>
       </div>
     </>
   );
