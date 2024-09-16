@@ -50,12 +50,12 @@ export default function SkillsSlider() {
   };
 
   return (
-    <div className="w-full bg-secondary-section px-[20%] sm:max-lg:px-[12%] py-14 mb-12 text-center">
-      <header className="flex flex-col text-secondary-text my-9">
-        <p className="text-2xl font-thin italic">Proffesional Skills</p>
-        <p className="uppercase text-sm font-thin tracking-widest">
+    <div className="w-full bg-secondary-section px-[20%] sm:max-lg:px-[12%] pb-16 mb-12 text-center">
+      <header className="flex flex-col text-secondary py-10 sm:py-16 ">
+        <p className="text-2xl sm:text-3xl font-light italic">What I bring to the table</p>
+        {/* <p className="uppercase text-sm font-thin tracking-widest">
           What I bring to the table
-        </p>
+        </p> */}
       </header>
       <div className="max-w-[1100px] mx-auto">
         <Slider {...settings}>

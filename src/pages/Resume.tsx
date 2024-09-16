@@ -1,6 +1,7 @@
 import ResumeSection from "../components/ResumeSection.js";
 import { resumeData, skills, hobbies } from "../assets/data.js";
 import Container from "../layouts/Container";
+import Button from "../layouts/Button.js";
 
 
 export default function Resume() {
@@ -9,19 +10,20 @@ export default function Resume() {
 
   return (
     <>
-      <div
-        id="projects"
-        // className="max-w-[1100px] w-[90%] mx-auto mb-28 p-8 scroll-mt-24"
-      >
-        <div className="w-full mb-10 bg-main-custom-pattern bg-cover bg-center text-center text-secondary-button-text py-5">
+
+        <div className="w-full mb-10 bg-main-custom-pattern bg-cover bg-center text-center text-secondary-button-text pt-5 pb-10">
           <Container>
             <h1 className="font-bold text-3xl mb-2">Aneta Falkowska</h1>
-            <h4 className="text-xl">React Web Developer</h4>
+            <h4 className="text-xl">React Developer</h4>
             <p className="text-sm mt-1">
               aneta.falkowska@gmail.com | (+48) 502 394 679
             </p>
+            <Button className="mx-auto w-48 my-6" variant="inverse" href="/files/Aneta_Falkowska_CV_en.pdf" download="Aneta_Falkowska_CV_en.pdf">
+              Download CV
+            </Button>
           </Container>
         </div>
+
 
         <div>
           <h2 className="text-gray-800 text-center font-semibold text-2xl p-4 shadow-md">
@@ -85,7 +87,7 @@ export default function Resume() {
             HOBBIES
           </h2>
           <Container>
-            <div className="p-10 flex flex-wrap justify-evenly gap-10">
+            <div className="py-16 py-10 flex flex-wrap justify-evenly gap-10">
               {hobbies.map((el, index) => (
                 <div key={index}>
                   <div className="size-20 rounded-full bg-secondary-light p-5">
@@ -119,7 +121,7 @@ export default function Resume() {
             </div>
           </Container>
         </div>
-      </div>
+
     </>
   );
 }

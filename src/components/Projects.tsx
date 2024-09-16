@@ -7,10 +7,10 @@ export default function () {
     <Container maxWidth="max-w-[1100px]">
       <div
     id="projects"
-    className="mb-28 scroll-mt-24"
+    className="mb-10 sm:mb-28 scroll-mt-12"
   >
     
-    <h1 className="text-4xl font-bold text-center py-10 mb-12">
+    <h1 className="text-gray-800 text-center font-semibold text-3xl py-2 sm:py-10 mb-12">
       My Projects
     </h1>
     <div>

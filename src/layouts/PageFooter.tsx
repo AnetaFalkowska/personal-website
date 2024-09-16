@@ -18,11 +18,9 @@ export default function PageFooter() {
           <div className="hidden sm:block sm:w-48">
             <p>&copy; 2024 Aneta Falkowska.</p>
             <p> All rights reserved.</p>
-            {/* <p>https://github.com/AnetaFalkowska</p>
-            <p>502 394 679</p> */}
           </div>
           <div className="w-auto sm:w-48">
-            <Button className="mx-auto" variant="inverse" href="">
+            <Button className="mx-auto text-base" variant="inverse" href="/files/Aneta_Falkowska_CV_en.pdf" download="Aneta_Falkowska_CV_en.pdf">
               Download CV
             </Button>
           </div>

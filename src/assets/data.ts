@@ -10,9 +10,9 @@ import reduxIcon from "../assets/techIcons/redux.png";
 import routerIcon from "../assets/techIcons/router.png";
 import bootstrapIcon from "../assets/techIcons/bootstrap.png";
 import cyclingIcon from "../assets/hobbyIcons/exercise.png";
-import climbingIcon from "../assets/hobbyIcons/clipart553145.png";
+import climbingIcon from "../assets/hobbyIcons/carrabiner.png";
 import cookingIcon from "../assets/hobbyIcons/chef.png";
-import readingIcon from "../assets/hobbyIcons/book1.png";
+import readingIcon from "../assets/hobbyIcons/book.png";
 
 export const resumeData = {
   education: [
@@ -236,7 +236,7 @@ export const projectData = [
       },
     ],
     link: "",
-    image: "/IntervalTimer.PNG",
+    image: "/projects/IntervalTimer.PNG",
   },
   {
     id: "p2",
@@ -301,7 +301,7 @@ export const projectData = [
       },
     ],
     link: "https://recipe-keeper-frontend.onrender.com",
-    image: "/RecipeKeeper.PNG",
+    image: "/projects/RecipeKeeper.PNG",
   },
   {
     id: "p3",
@@ -344,7 +344,7 @@ export const projectData = [
       },
     ],
     link: "https://recipe-keeper-frontend.onrender.com",
-    image: "/Portfolio-desktop.PNG",
+    image: "/projects/Portfolio-desktop.PNG",
   },
 ];
 

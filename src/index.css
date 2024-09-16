@@ -18,26 +18,41 @@
   }
   .custom-inset-shadow-2 {
     @apply shadow-inner;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), 
-                inset -2px -2px 5px rgba(255, 255, 255, 0.3);
-  }
-  .custom-inset-shadow-3 {
-    @apply shadow-inner;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), 
                 inset -3px -3px 5px rgba(165, 49, 106, 0.3);
   }
-  .custom-inset-shadow-4 {
+  .custom-inset-shadow-3 {
     @apply shadow-inner;
     box-shadow: inset 5px 5px 10px rgba(165, 49, 106, 0.3), 
                 inset -3px -3px 5px rgba(255, 255, 255, 1);
   }
-  .custom-shadow {
-    @apply shadow-inner;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 
+  .desktop-shadow {
+    @apply shadow;
+    box-shadow: -3px 3px 3px rgba(0,0,0,0.3);
+  }
+  .desktop-shadow-hover {
+    @apply shadow;
+    box-shadow: -6px 6px 6px rgba(0,0,0,0.3);
+  }
+  .tablet-shadow {
+    @apply shadow-md;
+    box-shadow: -9px 9px 9px rgba(0,0,0,0.3);
+  }
+  .tablet-shadow-hover {
+    @apply shadow;
+    box-shadow: -13px 13px 13px rgba(0,0,0,0.3);
+  }
+  .mobile-shadow {
+    @apply shadow;
+    box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
+  }
+  .mobile-shadow-hover {
+    @apply shadow;
+    box-shadow: -25px 25px 25px rgba(0,0,0,0.3);
   }
 }
 
-.progress-custom {
+/* .progress-custom {
   @apply w-4/5 h-1 overflow-hidden rounded-lg bg-[#e9e0e4];
 }
 
@@ -55,23 +70,23 @@
   background-color: #f9eaf4;
   border-radius: 5px;
 
-}
+} */
 
 .slick-slide > div {
   margin: 0 10px;
 }
 
-.slick-dots li button:before {
+.slick-dots li button::before {
   color: #efb2d0;
 }
 
-.slick-dots li.slick-active button:before {
-  color: #762541;
+.slick-dots li.slick-active button::before {
+  color: #73284c;
 }
 
 .slick-arrow.slick-next,
 .slick-arrow.slick-prev {
-  background-color: #aa2d5a;
+  background-color: #a5316a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +110,7 @@
 
 .slick-arrow.slick-next:hover,
 .slick-arrow.slick-prev:hover {
-  background-color: #aa2d5a;
+  background-color: #73284c;
   opacity: 1;
 }
 

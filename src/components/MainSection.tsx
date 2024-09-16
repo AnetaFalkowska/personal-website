@@ -3,7 +3,7 @@ import { buttonStyles } from "../layouts/Button.tsx";
 import { technologies } from "../assets/data.ts";
 import SkillsSlider from "./SkillsSlider.tsx";
 import Projects from "./Projects.tsx";
-import ProfilePicture from "../assets/Aneta1.jpg";
+import ProfilePicture from "../../public/images/Profile_picture.jpg";
 import Container from "../layouts/Container.tsx";
 // import dots from "../assets/dots.jpg";
 // import code from "../assets/code.jpg";
@@ -31,7 +31,7 @@ function ProfileSection() {
               Aneta Falkowska
             </p>
             <p className="italic text-3xl sm:text-4xl whitespace-nowrap">
-              React Web Developer
+              React Developer
             </p>
           </div>
           <img
@@ -41,12 +41,12 @@ function ProfileSection() {
         {/* </div> */}
       </div>
       <Container maxWidth="max-w-[730px]">
-        <div className="py-20 text-center">
-          <header className="text-secondary-text mb-9 mt-12 sm:mt-9">
-            <p className="text-2xl font-thin italic">About Me</p>
-            <p className="uppercase text-sm font-thin tracking-widest">
+        <div className="pt-24 pb-20 text-center">
+          <header className="text-secondary py-9">
+            <p className="text-2xl sm:text-3xl font-light italic">About Me</p>
+            {/* <p className="uppercase text-sm font-thin tracking-widest">
               My background
-            </p>
+            </p> */}
           </header>
           <main className="text-gray-600">
             Frontend Developer with a strong foundation in project management
@@ -71,9 +71,13 @@ function ProfileSection() {
 
 function TechnologyList() {
   return (
-    <div className="w-full bg-technology-custom-pattern bg-cover bg-center py-2 sm:py-10">
+    <div className="w-full bg-technology-custom-pattern bg-cover bg-center text-center pb-10">
       <Container maxWidth="max-w-[1100px]">
-        <div className="flex flex-wrap gap-4 justify-center py-4">
+      <header className="text-secondary py-10 sm:py-16 ">
+            <p className="text-2xl sm:text-3xl font-light italic">Technologies I Use</p>
+
+          </header>
+        <div className="flex flex-wrap gap-4 justify-center">
           {technologies.map((el, index) => (
             <TechnologyItem key={index} {...el} />
           ))}

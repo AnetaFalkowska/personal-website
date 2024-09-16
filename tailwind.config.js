@@ -28,7 +28,7 @@ export default {
         merriweather: ['"Merriweather"', 'sans-serif']
       },
       backgroundImage: {
-        'main-custom-pattern': "url('/images/dots_2.jpg')",
+        'main-custom-pattern': "url('/images/dots_3.jpg')",
         'technology-custom-pattern': "url('/images/code_2.jpg')",
       },
     },
