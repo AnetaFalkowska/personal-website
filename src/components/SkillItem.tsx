@@ -1,12 +1,9 @@
-import {useRef, useEffect} from "react"
-
-
 type SkillItemProps = {
   title: string;
-  value: number;
+
 };
 
-export default function SkillItem({ title, value }: SkillItemProps) {
+export default function SkillItem({ title }: SkillItemProps) {
 
   return (
     <p className="flex justify-between gap-2 items-center mb-1">

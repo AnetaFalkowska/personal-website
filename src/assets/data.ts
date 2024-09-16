@@ -235,7 +235,7 @@ export const projectData = [
         description: "Saves user settings and preferences for future sessions.",
       },
     ],
-    link: "",
+    link: "https://interval-timer-app.onrender.com",
     image: "/projects/IntervalTimer.PNG",
   },
   {
@@ -343,7 +343,7 @@ export const projectData = [
           "Utilizes Tailwind CSS for clean, responsive design and easy maintenance.",
       },
     ],
-    link: "https://recipe-keeper-frontend.onrender.com",
+    link: "https://falkowska-portfolio.onrender.com",
     image: "/projects/Portfolio-desktop.PNG",
   },
 ];

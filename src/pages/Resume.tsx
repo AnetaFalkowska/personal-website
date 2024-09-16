@@ -87,13 +87,12 @@ export default function Resume() {
             HOBBIES
           </h2>
           <Container>
-            <div className="py-16 py-10 flex flex-wrap justify-evenly gap-10">
+            <div className="py-16 flex flex-wrap justify-evenly gap-10">
               {hobbies.map((el, index) => (
                 <div key={index}>
                   <div className="size-20 rounded-full bg-secondary-light p-5">
                     <img src={el.icon} />
                   </div>
-
                   <p className="text-gray-600 mt-5 text-center">{el.name}</p>
                 </div>
               ))}

@@ -5,8 +5,6 @@ import SkillsSlider from "./SkillsSlider.tsx";
 import Projects from "./Projects.tsx";
 import ProfilePicture from "../../public/images/Profile_picture.jpg";
 import Container from "../layouts/Container.tsx";
-// import dots from "../assets/dots.jpg";
-// import code from "../assets/code.jpg";
 
 export function MainSection() {
   return (
@@ -101,10 +99,9 @@ function TechnologyList() {
 type ResumeItemProps = {
   name: string;
   icon: string;
-  description: string;
 };
 
-function TechnologyItem({ name, icon, description }: ResumeItemProps) {
+function TechnologyItem({ name, icon }: ResumeItemProps) {
   return (
     // <div className="group w-32 lg:w-48 xl:w-60 text-center rounded-2xl p-2">
     //   <img src={icon} className="mx-auto w-10 h-10 group-hover:opacity-100" />

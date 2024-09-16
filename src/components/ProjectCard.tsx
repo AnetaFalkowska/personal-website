@@ -28,7 +28,7 @@ export default function ProjectCard({
       <div className="relative md:w-[90%] mx-auto bg-secondary-section border-t-4 border-secondary mb-14 p-6 pt-16 rounded-lg shadow-md flex flex-col lg:flex-row items-start">
         <div className="relative w-auto lg:w-1/2 mb-4 lg:mb-0 lg:mr-8">
           <a
-            href="#projects"
+            href={link}
             className="inline-block w-[80%] lg:w-full rounded-2xl desktop-shadow z-5 transition-all duration-300 ease-in-out hover:scale-105 hover:desktop-shadow-hover active:scale-95"
           >
               <img
@@ -39,7 +39,7 @@ export default function ProjectCard({
           </a>
 
           <a
-            href="#projects"
+            href={link}
             className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-2xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 mobile-shadow z-20 transition-all duration-300 ease-in-out hover:scale-105 hover:mobile-shadow-hover active:scale-95"
           >
             <img
@@ -49,7 +49,7 @@ export default function ProjectCard({
             />
           </a>
           <a
-            href="#projects"
+            href={link}
             className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-2xl top-[88%] left-[14%] tablet-shadow z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:tablet-shadow-hover active:scale-95"
           >
             <img
@@ -105,7 +105,7 @@ export default function ProjectCard({
             View on GitHub
           </a>
           <a
-            href="#projects"
+            href={link}
             className={twMerge(
               buttonStyles(),
               "mb-4 mr-auto w-52"
