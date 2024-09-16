@@ -1,5 +1,3 @@
-import { twMerge } from "tailwind-merge";
-
 type ResumeSectionProps = {
   years: string;
   title?: string;
