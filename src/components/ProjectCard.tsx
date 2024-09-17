@@ -29,39 +29,39 @@ export default function ProjectCard({
         <div className="relative w-auto lg:w-1/2 mb-4 lg:mb-0 lg:mr-8">
           <a
             href={link}
-            className="inline-block w-[80%] lg:w-full rounded-2xl desktop-shadow z-5 transition-all duration-300 ease-in-out hover:scale-105 hover:desktop-shadow-hover active:scale-95"
+            className="inline-block w-[80%] lg:w-full rounded-lg lg:rounded-xl desktop-shadow z-5 transition-all duration-300 ease-in-out hover:scale-105 hover:desktop-shadow-hover active:scale-95"
           >
               <img
               src={image}
               alt={`${title} screenshot`}
-              className="rounded-2xl object-cover"
+              className="rounded-lg lg:rounded-xl object-cover"
             />
           </a>
 
           <a
             href={link}
-            className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-2xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 mobile-shadow z-20 transition-all duration-300 ease-in-out hover:scale-105 hover:mobile-shadow-hover active:scale-95"
+            className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-lg lg:rounded-xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 mobile-shadow z-20 transition-all duration-300 ease-in-out hover:scale-105 hover:mobile-shadow-hover active:scale-95"
           >
             <img
               src="/projects/Small.PNG"
               alt={`${title} screenshot`}
-              className="rounded-2xl object-cover"
+              className="rounded-lg lg:rounded-xl object-cover"
             />
           </a>
           <a
             href={link}
-            className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-2xl top-[88%] left-[14%] tablet-shadow z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:tablet-shadow-hover active:scale-95"
+            className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-xl top-[88%] left-[14%] tablet-shadow z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:tablet-shadow-hover active:scale-95"
           >
             <img
               src="/projects/tablet.PNG"
               alt={`${title} screenshot`}
-              className="rounded-2xl object-cover"
+              className="rounded-xl object-cover"
             />
           </a>
         </div>
 
         <div className="flex-1">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-2">{title}</h3>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h3>
           <p className="text-gray-600 mb-4">{description}</p>
 
           <h4 className="text-lg font-semibold text-gray-700">Tech Stack</h4>
@@ -76,7 +76,7 @@ export default function ProjectCard({
             ))}
           </ul>
           <h4 className="text-lg font-semibold text-gray-700 mb-2">
-            Key Features
+            Technical Highlights
           </h4>
           <ul className="list-disc list-inside text-gray-600 mb-8">
             {keyFeatures.map((el, index) => (
@@ -115,7 +115,7 @@ export default function ProjectCard({
           </a>
 
         </div>
-        <div className="absolute top-0 right-0 w-12 h-12 bg-secondary rounded-bl-lg"></div>
+        <div className="absolute top-0 right-0 size-8 md:size-12 bg-secondary rounded-bl-lg"></div>
       </div>
     </>
   );

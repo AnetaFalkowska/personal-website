@@ -97,47 +97,46 @@ export const skills = {
   ],
 };
 
-export const skillData = [
+export const skillData = [    
   {
-    title: "Project Management Experience",
+    title: "Ability to Learn and Adapt",
     description:
-      "Efficiently organize tasks and deliver high-quality code on time.",
-  },
-
-  {
-    title: "Client-Focused Approach",
-    description:
-      "Create user interfaces that meet both technical requirements and user expectations.",
+      "Staying current with the latest technologies and contributing innovative solutions.",
   },
   {
     title: "Problem-Solving Skills",
     description:
-      "Quickly identify and fix issues while optimizing application performance.",
+      "Quickly identifying and resolving issues to optimize performance and minimize disruptions.",
   },
   {
     title: "Attention to Detail",
     description:
-      "Write clean, maintainable code and thoroughly test applications.",
+      "Writing clean, maintainable code with a focus on long-term scalability and collaboration.",
+  },  
+  {
+    title: "Client-Focused Approach",
+    description:
+      "Building user interfaces that meet both technical requirements and user expectations.",
   },
   {
-    title: "Ability to Learn and Adapt",
+    title: "Strong Collaboration",
     description:
-      "Stay current with the latest technologies and contribute innovative solutions.",
-  },
-  {
-    title: "Communication and Collaboration Skills",
-    description:
-      "Facilitate effective teamwork and clear communication with different departments.",
-  },
+      "Clear communication and teamwork across departments, aligning efforts with business goals.",
+  },  
   {
     title: "Data-Driven Approach",
     description:
-      "Optimize website performance and enhance user experiences based on real data.",
+      "Using data to enhance website performance and user experiences effectively.",
   },
   {
     title: "Big Picture and Detail Orientation",
     description:
-      "Anticipate potential problems, connect facts, and resolve them effectively while keeping the overall vision in mind.",
+      "Anticipating challanges and resolving them effectively while keeping the overall vision in mind.",
+  },
+  {
+    title: "Project Management",
+    description:
+      "Efficient in organizing tasks and delivering high-quality code on time, keeping projects on track.",
   },
 ];
 
@@ -189,52 +188,54 @@ export const projectData = [
     id: "p1",
     title: "Interval Timer",
     description:
-      "Interval Timer is a functional app for managing workout intervals. It allows users to create and customize workout sessions, set times for preparation, work, rest, and cool-down, as well as the number of sets. The app provides options to save, edit, and delete predefined sessions.",
+      "Interval Timer is a functional app for managing workout intervals, allowing users to create and customize sessions with phases like preparation, work, rest, cooldown and the number of sets. Users can start workouts instantly, save exercises for future use, and edit or delete saved workouts as needed. The app automatically calculates phase times, transitions smoothly between phases, and supports local storage to retain settings and workouts between sessions. Audio cues signal phase transitions, enabling users to focus on their workout without checking the screen. Additionally, users can pause, resume, or restart sessions and benefit from demo exercises for a quick start.",
     techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
     keyFeatures: [
       {
-        name: "Responsive Design",
-        description: "Optimized for both mobile and desktop devices.",
-      },
-      {
-        name: "Interval Customization",
-        description: "Set and adjust interval times.",
-      },
-      {
-        name: "Session Management",
-        description: "Add, edit, and delete workout sessions.",
-      },
-      {
-        name: "Easy Workout Start",
-        description: "Option to start a workout immediately.",
-      },
-      {
-        name: "Sound Alerts",
-        description:
-          " Notifies users with sound at the start and end of intervals.",
-      },
-      {
-        name: "Countdown Animation",
-        description: "Displays a visual countdown for each interval.",
-      },
-      {
-        name: "Pause & Resume",
-        description: "Lets users pause and resume the timer as needed.",
-      },
-      {
-        name: "Reset Timer",
-        description:
-          "A reset button to restart the session from the beginning.",
-      },
-      {
-        name: "Keyboard Shortcuts",
-        description: "Enables timer control via keyboard commands.",
+        name: "Modular Code Structure",
+        description: "Divides functionality (validation, time conversion, data handling) into reusable modules like validation.js, time.js, and exercises.js, keeping the main codebase clean and manageable."
       },
       {
         name: "Local Storage",
-        description: "Saves user settings and preferences for future sessions.",
+        description: "Used to save user-generated exercises. Functions such as saveUserExerciseToLocalStorage, updateCurrentExercise, and getExerciseById handle data persistence."
       },
+      {
+        name: "Dynamic DOM Management",
+        description: "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions ((generateExerciseListHTML, populateFormWithExerciseData) with native JS methods like querySelector, addEventListener, and innerHTML updates.",
+      },
+      {
+        name: "Countdown Feature",
+        description: "Implemented with setInterval, includes audio cues for phase transitions using the HTML5 Audio API.",
+      },
+      {
+        name: "Asynchronous Control with Promise Chaining",
+        description:
+          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow (countDownArray.reduce)."
+      },
+      {
+        name: "Post-Submission Validation",
+        description: "Checks user input after the form is submitted and prevents invalid data from being saved. Visual feedback is provided by highlighting invalid fields.",
+      },
+      {
+        name: "Bootstrap UI Components",
+        description: "Used for managing user interactions, ensuring a responsive and consistent UI."
+      },
+      {
+        name: "Custom Icons with Lucide",
+        description:
+          "The Lucide library renders scalable SVG icons dynamically (lucide.createIcons()), ensuring clear visuals across the UI."
+     },
+     {
+      name: "User-Friendly Interface",
+      description: "Incorporates features like a sticky header, tooltip buttons, and dynamic form hints to enhance usability and improve readability."
+    },
+    {
+      name: "Modal Dialogs",
+      description:
+        "Utilizes modal dialogs for operations such as saving exercises and confirming deletions."
+   },
     ],
+
     link: "https://interval-timer-app.onrender.com",
     image: "/projects/IntervalTimer.PNG",
   },
