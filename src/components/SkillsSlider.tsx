@@ -50,9 +50,9 @@ export default function SkillsSlider() {
   };
 
   return (
-    <div className="w-full bg-secondary-section px-[20%] sm:max-lg:px-[12%] pb-16 mb-12 text-center">
+    <div className="w-full bg-secondary-section px-[15%] lg:px-[20%] sm:max-lg:px-[12%] pb-16 mb-12 text-center">
       <header className="flex flex-col text-secondary py-10 sm:py-16 ">
-        <p className="text-2xl sm:text-3xl font-light italic">What I bring to the table</p>
+        <p className="text-2xl sm:text-3xl font-medium">What I bring to the table</p>
         {/* <p className="uppercase text-sm font-thin tracking-widest">
           What I bring to the table
         </p> */}
@@ -60,17 +60,17 @@ export default function SkillsSlider() {
       <div className="max-w-[1100px] mx-auto">
         <Slider {...settings}>
           {skillData.map((d) => (
-            <div className="h-full p-0 sm:p-1 mb-2">
+            <div className="h-full p-0 sm:p-1 mb-10 sm:mb-2">
               {/* <h3 className="h-18 sm:h-24 md:h-16 text-md xl:text-xl font-semibold text-center text-gray-800 pb-3 sm:pb-0">
                 {d.title}
               </h3>
               <p className="text-gray-600 mb-1 text-sm md:text-base">
                 {d.description}
               </p> */}
-              <h3 className="font-semibold text-center text-gray-800 h-16 slider-sm:max-sm:h-20 lg:h-20 xl:text-lg p-0 sm:p-1">
+              <h3 className="font-semibold text-center text-gray-800 h-16 xl:text-lg p-0 sm:p-1">
                 {d.title}
               </h3>
-              <p className="text-gray-600 text-sm xl:text-base">
+              <p className="text-gray-600">
                 {d.description}
               </p>
             </div>

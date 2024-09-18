@@ -11,7 +11,7 @@ export default function () {
   >
     
     <h1 className="text-gray-800 text-center font-semibold text-3xl py-2 sm:py-10 mb-12">
-      My Projects
+      MY PROJECTS
     </h1>
     <div>
       {projectData.map((project) => (
@@ -19,8 +19,11 @@ export default function () {
           key={project.id}
           title={project.title}
           description={project.description}
+          git={project.git}
           link={project.link}
-          image={project.image}
+          imgDesktop={project.imgDesktop}
+          imgTablet={project.imgTablet}
+          imgMobile={project.imgMobile}
           techStack={project.techStack}
           keyFeatures={project.keyFeatures}
         />

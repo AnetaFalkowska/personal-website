@@ -11,7 +11,7 @@ export default function Resume() {
   return (
     <>
 
-        <div className="w-full mb-10 bg-main-custom-pattern bg-cover bg-center text-center text-secondary-button-text pt-5 pb-10">
+        <div className="w-full mb-10 bg-main-custom-pattern bg-cover bg-center text-center text-secondary-button-text pt-5 pb-5">
           <Container>
             <h1 className="font-bold text-3xl mb-2">Aneta Falkowska</h1>
             <h4 className="text-xl">React Developer</h4>

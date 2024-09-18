@@ -17,7 +17,7 @@ import readingIcon from "../assets/hobbyIcons/book.png";
 export const resumeData = {
   education: [
     {
-      years: "2022 - 2024",
+      years: "2023 - 2024",
       entity: "Self-study - Web Development",
       details:
         "Focused on learning JavaScript, React and modern web technologies",
@@ -97,46 +97,46 @@ export const skills = {
   ],
 };
 
-export const skillData = [    
+export const skillData = [
   {
     title: "Ability to Learn and Adapt",
     description:
-      "Staying current with the latest technologies and contributing innovative solutions.",
+      "I am quick to learn new technologies, as I find them both inspiring and motivating.",
   },
   {
     title: "Problem-Solving Skills",
     description:
-      "Quickly identifying and resolving issues to optimize performance and minimize disruptions.",
-  },
-  {
-    title: "Attention to Detail",
-    description:
-      "Writing clean, maintainable code with a focus on long-term scalability and collaboration.",
-  },  
-  {
-    title: "Client-Focused Approach",
-    description:
-      "Building user interfaces that meet both technical requirements and user expectations.",
-  },
-  {
-    title: "Strong Collaboration",
-    description:
-      "Clear communication and teamwork across departments, aligning efforts with business goals.",
-  },  
-  {
-    title: "Data-Driven Approach",
-    description:
-      "Using data to enhance website performance and user experiences effectively.",
-  },
-  {
-    title: "Big Picture and Detail Orientation",
-    description:
-      "Anticipating challanges and resolving them effectively while keeping the overall vision in mind.",
+      "I quickly identify and resolve issues to optimize performance and keep things running smoothly.",
   },
   {
     title: "Project Management",
     description:
-      "Efficient in organizing tasks and delivering high-quality code on time, keeping projects on track.",
+      "I am organized and ensure projects stay on track, delivering quality code on time.",
+  },
+  {
+    title: "Attention to Detail",
+    description:
+      "Writing clean, well-structured code is a priority for me, ensuring maintainability and easy collaboration.",
+  },
+  {
+    title: "Data-Driven Approach",
+    description:
+      "I leverage data insights to optimize performance and elevate the overall user experience",
+  },
+  {
+    title: "Client-Focused Approach",
+    description:
+      "I prioritize user-friendly design, designing interfaces that align technical requirements with user needs.",
+  },
+  {
+    title: "Strong Collaboration",
+    description:
+      "I thrive in team environments, encouraging clear communication and effective collaboration.",
+  },
+  {
+    title: "Big Picture and Detail Orientation",
+    description:
+      "Balancing the overall project vision with finer details, I address challenges effectively to keep things on track.",
   },
 ];
 
@@ -186,64 +186,9 @@ export const skillData1 = [
 export const projectData = [
   {
     id: "p1",
-    title: "Interval Timer",
-    description:
-      "Interval Timer is a functional app for managing workout intervals, allowing users to create and customize sessions with phases like preparation, work, rest, cooldown and the number of sets. Users can start workouts instantly, save exercises for future use, and edit or delete saved workouts as needed. The app automatically calculates phase times, transitions smoothly between phases, and supports local storage to retain settings and workouts between sessions. Audio cues signal phase transitions, enabling users to focus on their workout without checking the screen. Additionally, users can pause, resume, or restart sessions and benefit from demo exercises for a quick start.",
-    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
-    keyFeatures: [
-      {
-        name: "Modular Code Structure",
-        description: "Divides functionality (validation, time conversion, data handling) into reusable modules like validation.js, time.js, and exercises.js, keeping the main codebase clean and manageable."
-      },
-      {
-        name: "Local Storage",
-        description: "Used to save user-generated exercises. Functions such as saveUserExerciseToLocalStorage, updateCurrentExercise, and getExerciseById handle data persistence."
-      },
-      {
-        name: "Dynamic DOM Management",
-        description: "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions ((generateExerciseListHTML, populateFormWithExerciseData) with native JS methods like querySelector, addEventListener, and innerHTML updates.",
-      },
-      {
-        name: "Countdown Feature",
-        description: "Implemented with setInterval, includes audio cues for phase transitions using the HTML5 Audio API.",
-      },
-      {
-        name: "Asynchronous Control with Promise Chaining",
-        description:
-          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow (countDownArray.reduce)."
-      },
-      {
-        name: "Post-Submission Validation",
-        description: "Checks user input after the form is submitted and prevents invalid data from being saved. Visual feedback is provided by highlighting invalid fields.",
-      },
-      {
-        name: "Bootstrap UI Components",
-        description: "Used for managing user interactions, ensuring a responsive and consistent UI."
-      },
-      {
-        name: "Custom Icons with Lucide",
-        description:
-          "The Lucide library renders scalable SVG icons dynamically (lucide.createIcons()), ensuring clear visuals across the UI."
-     },
-     {
-      name: "User-Friendly Interface",
-      description: "Incorporates features like a sticky header, tooltip buttons, and dynamic form hints to enhance usability and improve readability."
-    },
-    {
-      name: "Modal Dialogs",
-      description:
-        "Utilizes modal dialogs for operations such as saving exercises and confirming deletions."
-   },
-    ],
-
-    link: "https://interval-timer-app.onrender.com",
-    image: "/projects/IntervalTimer.PNG",
-  },
-  {
-    id: "p2",
     title: "Recipe keeper",
     description:
-      "Recipe Keeper is a comprehensive web application for managing and discovering recipes. It allows users to create, edit, and delete their own recipes, as well as search for recipes both locally and online. The application uses React Router for seamless navigation and dynamic content loading.",
+      "When building this React app, I ventured into developing a Node.js backend as an experimental project to support the frontend. This project enhanced my skills in full-stack development, including React Router for navigation, API integration, state management, and asynchronous programming. The app enables users to discover, create, and manage recipes, providing a seamless user experience through the integration of both server-stored and internet-sourced data.",
     techStack: [
       "React",
       "React Router",
@@ -251,64 +196,125 @@ export const projectData = [
       "CSS3",
       "JavaScript",
       "API Integration",
+      "Node.js",
+      "Express",
     ],
     keyFeatures: [
       {
-        name: "Responsive Design",
-        description: "Optimized for both mobile and desktop views.",
+        name: "Component-Based Architecture",
+        description: "Creates modular and maintainable code.",
       },
       {
-        name: "Asynchronous Data Fetching",
-        description: "Utilizes React hooks for asynchronous data fetching.",
+        name: "React Router for Routing",
+        description: "Implements nested and dynamic routes.",
       },
       {
-        name: "Recipe Management",
-        description: "Users can create, modify, and remove recipes.",
-      },
-      {
-        name: "Local Recipe Search",
-        description: "Search personal recipes by title or ingredients.",
-      },
-      {
-        name: "Online Recipe Search",
-        description: "Search external recipe databases online.",
-      },
-      {
-        name: "Random Recipe",
-        description: "Display a random recipe for users to try.",
-      },
-
-      {
-        name: "Search Interface",
-        description: "Intuitive search bar for local and online recipes.",
-      },
-      {
-        name: "Recipe Form Validation",
+        name: "Dynamic Data Loading",
         description:
-          "Ensure recipe titles are unique and meet length requirements; validate form data.",
+          "Implements loaders and actions to fetch and manage data dynamically.",
       },
       {
-        name: "Confirmation Modal",
-        description: "Confirm actions like canceling recipe edits.",
+        name: "Error Handling with React Router",
+        description:
+          "Provides custom error pages based on different HTTP statuses.",
       },
       {
-        name: "Random Recipe",
-        description: "Display a random recipe for users to try.",
+        name: "Server Communication",
+        description:
+          "Utilizes the fetch API for server communication, including CRUD operations for recipes.",
       },
-
       {
-        name: "Error Handling",
-        description: "Custom error pages to handle different types of errors.",
+        name: "Styling with CSS Modules",
+        description: "Ensures scoped and maintainable styles.",
+      },
+      {
+        name: "API Integration",
+        description: "Connects to external APIs for recipe data.",
+      },
+      {
+        name: "Form Validation",
+        description:
+          "Prevents invalid data submission and provides real-time feedback to users.",
+      },
+      {
+        name: "Node.js Backend",
+        description:
+          "Manages HTTP requests and recipe data with RESTful APIs built using Express.js.",
+      },
+      {
+        name: "Backend File-Based Data Storage",
+        description:
+          "Manages recipe data on the server side using a JSON file and Node.js' fs module.",
+      },
+      {
+        name: "Express Routing",
+        description:
+          "Manages CRUD operations and routes for fetching random recipes and titles.",
       },
     ],
+    git: "https://github.com/AnetaFalkowska/Recipe-keeper",
     link: "https://recipe-keeper-frontend.onrender.com",
-    image: "/projects/RecipeKeeper.PNG",
+    imgDesktop: "/projects/Recipe_desktop.PNG",
+    imgTablet: "/projects/Recipe_tablet.PNG",
+    imgMobile: "/projects/Recipe_mobile.PNG",
+  },
+  {
+    id: "p2",
+    title: "Interval Timer",
+    description: `I built this app as an experiment to dive into asynchronous programming and state management using pure JavaScript. This project helped me refine skills in DOM manipulation, local data management, and integrating libraries and frameworks. The app allows users manage and customize interval-based workouts with automated phase timing and transitions.`,
+    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
+    keyFeatures: [
+      {
+        name: "Modular Code Structure",
+        description:
+          "Divides functionality (validation, time conversion, data handling) into reusable modules.",
+      },
+      {
+        name: "Local Storage",
+        description: "Used to save user-generated exercises.",
+      },
+      {
+        name: "Asynchronous Control with Promise Chaining",
+        description:
+          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow.",
+      },
+      {
+        name: "Dynamic DOM Management",
+        description:
+          "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions.",
+      },
+      {
+        name: "Countdown Feature",
+        description:
+          "Includes audio cues for phase transitions using the HTML5 Audio API.",
+      },
+      {
+        name: "Form Validation",
+        description:
+          "Prevents invalid data from being saved and provides feedback to the user.",
+      },
+      {
+        name: "Bootstrap UI Components",
+        description:
+          "Ensures a responsive, consistent UI for user interactions.",
+      },
+      {
+        name: "Modal Dialogs",
+        description:
+          "Utilizes Bootstrap modal dialogs for operations such as saving exercises and confirming deletions.",
+      },
+    ],
+    git: "https://github.com/AnetaFalkowska/Interval-Timer-App",
+    link: "https://interval-timer-app.onrender.com",
+    imgDesktop: "/projects/Interval_desktop.PNG",
+    imgTablet: "/projects/Interval_tablet.PNG",
+    imgMobile: "/projects/Interval_mobile.PNG",
   },
   {
     id: "p3",
     title: "Portfolio Web Application",
     description:
-      "The Portfolio Web Application is a modern website designed to showcase my skills, professional experiences, and projects. The application uses React Router for seamless navigation between different sections, such as Home, Projects, Resume, and Contact. The homepage features my profile, technical skills, and an overview of my projects.",
+      "This project allowed me to refine my knowledge of React, component-based architecture, and responsive design. It features up-to-date frontend methods, employing TypeScript for type safety and Tailwind CSS for efficient styling.",
     techStack: [
       "React",
       "React Router",
@@ -320,32 +326,40 @@ export const projectData = [
     ],
     keyFeatures: [
       {
-        name: "Responsive Design",
-        description: "Optimized for both mobile and desktop views.",
+        name: "React Router for Navigation",
+        description:
+          "Creates a single-page experience with separate routes for different sections",
       },
       {
-        name: "Router Navigation",
+        name: "TypeScript Integration",
         description:
-          "Seamless navigation between pages enabled by React Router.",
+          "Components built with TypeScript for enhanced type safety and reduced runtime errors.",
       },
       {
-        name: "Custom Skill Slider",
+        name: "Modular Components",
         description:
-          "Interactive skill slider built with react-slick, featuring custom navigation arrows.",
+          "Follows DRY principles by using reusable components, making the codebase easier to maintain.",
       },
       {
-        name: "Button Styling with Tailwind Merge",
+        name: "Tailwind CSS with tailwind-merge and buttonStyles Utility",
         description:
-          "Button styled using twMerge and buttonStyles, allowing centralized style management and consistency across the application.",
+          "Ensures streamlined class management and consistent styling, with reusable button variants for a cohesive UI.",
       },
       {
-        name: "Tailwind CSS Styling",
+        name: "Dynamic Data Rendering",
         description:
-          "Utilizes Tailwind CSS for clean, responsive design and easy maintenance.",
+          "Update content easily via external data files without changing core components.",
+      },
+      {
+        name: "Responsive Carousel",
+        description: "Displays key skills using react-slick carousel.",
       },
     ],
+    git: "https://github.com/AnetaFalkowska/personal-website",
     link: "https://falkowska-portfolio.onrender.com",
-    image: "/projects/Portfolio-desktop.PNG",
+    imgDesktop: "/projects/Portfolio_desktop.PNG",
+    imgTablet: "/projects/Portfolio_tablet.PNG",
+    imgMobile: "/projects/Portfolio_mobile.PNG",
   },
 ];
 

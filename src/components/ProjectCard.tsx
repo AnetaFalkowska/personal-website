@@ -7,21 +7,28 @@ type KeyFeature = {
 };
 
 type ProjectCardProps = {
-  image: string;
+  imgDesktop: string;
+  imgTablet: string;
+  imgMobile: string;
   title: string;
   description: string;
   techStack: string[];
   keyFeatures: KeyFeature[];
+  git: string;
   link: string;
 };
 
 export default function ProjectCard({
-  image,
+  imgDesktop,
+  imgTablet,
+  imgMobile,
   title,
   description,
   techStack,
   keyFeatures,
+  git,
   link,
+  
 }: ProjectCardProps) {
   return (
     <>   
@@ -29,23 +36,23 @@ export default function ProjectCard({
         <div className="relative w-auto lg:w-1/2 mb-4 lg:mb-0 lg:mr-8">
           <a
             href={link}
-            className="inline-block w-[80%] lg:w-full rounded-lg lg:rounded-xl desktop-shadow z-5 transition-all duration-300 ease-in-out hover:scale-105 hover:desktop-shadow-hover active:scale-95"
+            className="inline-block w-[80%] lg:w-full rounded-md sm:rounded-lg lg:rounded-xl desktop-shadow z-5 transition-all duration-300 ease-in-out hover:scale-105 hover:desktop-shadow-hover active:scale-95"
           >
               <img
-              src={image}
+              src={imgDesktop}
               alt={`${title} screenshot`}
-              className="rounded-lg lg:rounded-xl object-cover"
+              className="rounded-md sm:rounded-lg lg:rounded-xl object-cover"
             />
           </a>
 
           <a
             href={link}
-            className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-lg lg:rounded-xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 mobile-shadow z-20 transition-all duration-300 ease-in-out hover:scale-105 hover:mobile-shadow-hover active:scale-95"
+            className="absolute overflow-hidden w-[20%] lg:w-[25%] rounded-md sm:rounded-lg lg:rounded-xl top-[50%] -translate-y-[50%] right-0 -translate-x-[30%] lg:top-[115%] lg:translate-y-0 lg:right-[14%] lg:-translate-x-0 mobile-shadow z-20 transition-all duration-300 ease-in-out hover:scale-105 hover:mobile-shadow-hover active:scale-95"
           >
             <img
-              src="/projects/Small.PNG"
+              src={imgMobile}
               alt={`${title} screenshot`}
-              className="rounded-lg lg:rounded-xl object-cover"
+              className="rounded-md sm:rounded-lg lg:rounded-xl object-cover"
             />
           </a>
           <a
@@ -53,7 +60,7 @@ export default function ProjectCard({
             className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-xl top-[88%] left-[14%] tablet-shadow z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:tablet-shadow-hover active:scale-95"
           >
             <img
-              src="/projects/tablet.PNG"
+              src={imgTablet}
               alt={`${title} screenshot`}
               className="rounded-xl object-cover"
             />
@@ -76,7 +83,7 @@ export default function ProjectCard({
             ))}
           </ul>
           <h4 className="text-lg font-semibold text-gray-700 mb-2">
-            Technical Highlights
+          Development Insights
           </h4>
           <ul className="list-disc list-inside text-gray-600 mb-8">
             {keyFeatures.map((el, index) => (
@@ -96,7 +103,7 @@ export default function ProjectCard({
             Visit Project →
           </a> */}
           <a
-            href="#projects"
+            href={git}
             className={twMerge(
               buttonStyles({ variant: "outline" }),
               "mb-4 mr-auto w-52"

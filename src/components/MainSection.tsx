@@ -28,7 +28,7 @@ function ProfileSection() {
             <p className="text-2xl sm:text-3xl font-black mb-5">
               Aneta Falkowska
             </p>
-            <p className="italic text-3xl sm:text-4xl whitespace-nowrap">
+            <p className="text-3xl sm:text-4xl whitespace-nowrap">
               React Developer
             </p>
           </div>
@@ -41,7 +41,7 @@ function ProfileSection() {
       <Container maxWidth="max-w-[730px]">
         <div className="pt-24 pb-20 text-center">
           <header className="text-secondary py-9">
-            <p className="text-2xl sm:text-3xl font-light italic">About Me</p>
+            <p className="text-2xl sm:text-3xl font-medium">About Me</p>
             {/* <p className="uppercase text-sm font-thin tracking-widest">
               My background
             </p> */}
@@ -49,7 +49,7 @@ function ProfileSection() {
           <main className="text-gray-600">
             Frontend Developer with a strong foundation in project management
             and key account expertise. Currently focused on building responsive
-            web applications using React, JavaScript HTML and CSS. I excel in
+            web applications using React, JavaScript, HTML and CSS. I excel in
             cross-team collaboration, problem-solving, and delivering
             client-focused solutions. My analytical mindset and ability to work
             under pressure enable me to translate complex requirements into
@@ -71,8 +71,8 @@ function TechnologyList() {
   return (
     <div className="w-full bg-technology-custom-pattern bg-cover bg-center text-center pb-10">
       <Container maxWidth="max-w-[1100px]">
-      <header className="text-secondary py-10 sm:py-16 ">
-            <p className="text-2xl sm:text-3xl font-light italic">Technologies I Use</p>
+      <header className="text-gray-800 py-10 sm:py-16 ">
+            <p className="text-2xl sm:text-3xl font-medium">Technologies I Use</p>
 
           </header>
         <div className="flex flex-wrap gap-4 justify-center">
