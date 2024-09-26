@@ -104,6 +104,8 @@ export default function ProjectCard({
           </a> */}
           <a
             href={git}
+            target="_blank"
+            rel="noopener noreferrer"
             className={twMerge(
               buttonStyles({ variant: "outline" }),
               "mb-4 mr-auto w-52"

@@ -1,19 +1,48 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./pages/Root";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import { lazy, Suspense } from "react";
+const Root = lazy(() => import("./pages/Root"));
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Resume = lazy(() => import("./pages/Resume"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     children: [
-      { path: "", element: <Home /> },
-      { path: "projects", element: <Projects /> },
-      { path: "resume", element: <Resume /> },
-      { path: "contact", element: <Contact /> },
+      {
+        path: "",
+        element: (
+          <Suspense fallback={<p className="mx-auto w-fit">Loading...</p>}>
+            <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "projects",
+        element: (
+          <Suspense fallback={<p className="mx-auto w-fit">Loading...</p>}>
+            <Projects />
+          </Suspense>
+        ),
+      },
+      {
+        path: "resume",
+        element: (
+          <Suspense fallback={<p className="mx-auto w-fit">Loading...</p>}>
+            <Resume />
+          </Suspense>
+        ),
+      },
+      {
+        path: "contact",
+        element: (
+          <Suspense fallback={<p className="mx-auto w-fit">Loading...</p>}>
+            <Contact />
+          </Suspense>
+        ),
+      },
     ],
   },
 ]);

@@ -253,7 +253,7 @@ export const projectData = [
       },
     ],
     git: "https://github.com/AnetaFalkowska/Recipe-keeper",
-    link: "https://recipe-keeper-frontend.onrender.com",
+    link: "https://recipe-keeper-af.onrender.com",
     imgDesktop: "/projects/Recipe_desktop.PNG",
     imgTablet: "/projects/Recipe_tablet.PNG",
     imgMobile: "/projects/Recipe_mobile.PNG",
