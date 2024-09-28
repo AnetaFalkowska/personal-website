@@ -29,7 +29,7 @@ function ProfileSection() {
               Aneta Falkowska
             </p>
             <p className="text-3xl sm:text-4xl whitespace-nowrap">
-              React Developer
+              Front-End Developer
             </p>
           </div>
           <img

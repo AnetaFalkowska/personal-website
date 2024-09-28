@@ -14,7 +14,7 @@ export default function Resume() {
         <div className="w-full mb-10 bg-main-custom-pattern bg-cover bg-center text-center text-secondary-button-text pt-5 pb-5">
           <Container>
             <h1 className="font-bold text-3xl mb-2">Aneta Falkowska</h1>
-            <h4 className="text-xl">React Developer</h4>
+            <h4 className="text-xl">Front-End Developer</h4>
             <p className="text-sm mt-1">
               aneta.falkowska@gmail.com | (+48) 502 394 679
             </p>
