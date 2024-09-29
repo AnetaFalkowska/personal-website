@@ -186,6 +186,58 @@ export const skillData1 = [
 export const projectData = [
   {
     id: "p1",
+    title: "Interval Timer",
+    description: `I built this app as an experiment to dive into asynchronous programming and state management using pure JavaScript. This project helped me refine skills in DOM manipulation, local data management, and integrating libraries and frameworks. The app allows users manage and customize interval-based workouts with automated phase timing and transitions.`,
+    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
+    keyFeatures: [
+      {
+        name: "Modular Code Structure",
+        description:
+          "Divides functionality (validation, time conversion, data handling) into reusable modules.",
+      },
+      {
+        name: "Local Storage",
+        description: "Used to save user-generated exercises.",
+      },
+      {
+        name: "Asynchronous Control with Promise Chaining",
+        description:
+          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow.",
+      },
+      {
+        name: "Dynamic DOM Management",
+        description:
+          "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions.",
+      },
+      {
+        name: "Countdown Feature",
+        description:
+          "Includes audio cues for phase transitions using the HTML5 Audio API.",
+      },
+      {
+        name: "Form Validation",
+        description:
+          "Prevents invalid data from being saved and provides feedback to the user.",
+      },
+      {
+        name: "Bootstrap UI Components",
+        description:
+          "Ensures a responsive, consistent UI for user interactions.",
+      },
+      {
+        name: "Modal Dialogs",
+        description:
+          "Utilizes Bootstrap modal dialogs for operations such as saving exercises and confirming deletions.",
+      },
+    ],
+    git: "https://github.com/AnetaFalkowska/Interval-Timer-App",
+    link: "https://interval-timer-app.onrender.com",
+    imgDesktop: "/projects/Interval_desktop.PNG",
+    imgTablet: "/projects/Interval_tablet.PNG",
+    imgMobile: "/projects/Interval_mobile.PNG",
+  },
+  {
+    id: "p2",
     title: "Recipe keeper",
     description:
       "When building this React app, I ventured into developing a Node.js backend as an experimental project to support the frontend. This project enhanced my skills in full-stack development, including React Router for navigation, API integration, state management, and asynchronous programming. The app enables users to discover, create, and manage recipes, providing a seamless user experience through the integration of both server-stored and internet-sourced data.",
@@ -258,58 +310,7 @@ export const projectData = [
     imgTablet: "/projects/Recipe_tablet.PNG",
     imgMobile: "/projects/Recipe_mobile.PNG",
   },
-  {
-    id: "p2",
-    title: "Interval Timer",
-    description: `I built this app as an experiment to dive into asynchronous programming and state management using pure JavaScript. This project helped me refine skills in DOM manipulation, local data management, and integrating libraries and frameworks. The app allows users manage and customize interval-based workouts with automated phase timing and transitions.`,
-    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
-    keyFeatures: [
-      {
-        name: "Modular Code Structure",
-        description:
-          "Divides functionality (validation, time conversion, data handling) into reusable modules.",
-      },
-      {
-        name: "Local Storage",
-        description: "Used to save user-generated exercises.",
-      },
-      {
-        name: "Asynchronous Control with Promise Chaining",
-        description:
-          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow.",
-      },
-      {
-        name: "Dynamic DOM Management",
-        description:
-          "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions.",
-      },
-      {
-        name: "Countdown Feature",
-        description:
-          "Includes audio cues for phase transitions using the HTML5 Audio API.",
-      },
-      {
-        name: "Form Validation",
-        description:
-          "Prevents invalid data from being saved and provides feedback to the user.",
-      },
-      {
-        name: "Bootstrap UI Components",
-        description:
-          "Ensures a responsive, consistent UI for user interactions.",
-      },
-      {
-        name: "Modal Dialogs",
-        description:
-          "Utilizes Bootstrap modal dialogs for operations such as saving exercises and confirming deletions.",
-      },
-    ],
-    git: "https://github.com/AnetaFalkowska/Interval-Timer-App",
-    link: "https://interval-timer-app.onrender.com",
-    imgDesktop: "/projects/Interval_desktop.PNG",
-    imgTablet: "/projects/Interval_tablet.PNG",
-    imgMobile: "/projects/Interval_mobile.PNG",
-  },
+
   {
     id: "p3",
     title: "Portfolio Web Application",
