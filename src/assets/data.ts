@@ -1,3 +1,4 @@
+import angularIcon from "../assets/techIcons/angular.png";
 import reactIcon from "../assets/techIcons/atom.png";
 import jsIcon from "../assets/techIcons/js.png";
 import htmlIcon from "../assets/techIcons/html.png";
@@ -79,11 +80,11 @@ export const skills = {
     { title: "JavaScript", level: "Advanced" },
     { title: "HTML", level: " Advanced" },
     { title: "CSS", level: "Advanced" },
-    { title: "React", level: "Intermediate" },
-    { title: "React Router", level: "Intermediate" },
+    { title: "Angular", level: "Intermediate" },
+    { title: "React", level: "Intermediate" },    
     { title: "TypeScript", level: "Intermediate" },
     { title: "Tailwind", level: "Intermediate" },
-    { title: "Redux", level: "Beginner" },
+
   ],
   softSkills: [
     "English - Advanced",
@@ -185,59 +186,55 @@ export const skillData1 = [
 
 export const projectData = [
   {
-    id: "p1",
-    title: "Interval Timer",
-    description: `I built this app as an experiment to dive into asynchronous programming and state management using pure JavaScript. This project helped me refine skills in DOM manipulation, local data management, and integrating libraries and frameworks. The app allows users manage and customize interval-based workouts with automated phase timing and transitions.`,
-    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
+    id: "p4",
+    title: "Kanban Board",
+    description: `The app, built with Angular, helped me develop new skills such as Angular’s modular architecture, RxJS for reactive programming, and dynamic form handling. It allows users to create, edit, organize, and track tasks within Kanban boards. Integration with a calendar and overdue task counter enhances the interface's usability.`,
+    techStack: ["Angular", "RxJS", "TypeScript", "HTML", "CSS3", "Angular HttpClient", "RESTful API","Node.js", "Express"],
     keyFeatures: [
       {
-        name: "Modular Code Structure",
-        description:
-          "Divides functionality (validation, time conversion, data handling) into reusable modules.",
+        name: "RxJS & Reactive Programming",
+        description: "Utilizes RxJS operators like switchMap, takeUntil, and Subjects for efficient asynchronous data handling."
       },
       {
-        name: "Local Storage",
-        description: "Used to save user-generated exercises.",
+        name: "Dynamic Routing & Parameter Mapping",
+        description: "Uses dynamic routes and parameters to navigate between views with contextual data."
       },
       {
-        name: "Asynchronous Control with Promise Chaining",
-        description:
-          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow.",
+        name: "Angular CDK Drag and Drop",
+        description: "Enables intuitive task management and reordering across columns."
       },
       {
-        name: "Dynamic DOM Management",
-        description:
-          "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions.",
+        name: "Animations & Transitions",
+        description: "Applies smooth Angular animations for seamless transitions and interactions between views."
       },
       {
-        name: "Countdown Feature",
-        description:
-          "Includes audio cues for phase transitions using the HTML5 Audio API.",
+        name: "State Management & Context Handling",
+        description: "Manages consistent state across components using a custom StateService."
       },
       {
-        name: "Form Validation",
-        description:
-          "Prevents invalid data from being saved and provides feedback to the user.",
+        name: "Reactive Forms & Validation",
+        description: "Implements built-in and custom form validations to ensure data integrity."
       },
       {
-        name: "Bootstrap UI Components",
-        description:
-          "Ensures a responsive, consistent UI for user interactions.",
+        name: "API Integration & CRUD Operations",
+        description: "Uses HttpClientModule for performing CRUD operations on tasks, columns, and boards."
       },
       {
-        name: "Modal Dialogs",
-        description:
-          "Utilizes Bootstrap modal dialogs for operations such as saving exercises and confirming deletions.",
+        name: "UI Customization & Material Design",
+        description: "Leverages Angular Material for consistent UI components and enhanced design."
       },
+      {
+        name: "Dialog and Notification Services",
+        description: "Provides reusable dialogs and real-time notifications to improve user interaction."
+      }
     ],
-    git: "https://github.com/AnetaFalkowska/Interval-Timer-App",
-    link: "https://interval-timer-app.onrender.com",
-    imgDesktop: "/projects/Interval_desktop.PNG",
-    imgTablet: "/projects/Interval_tablet.PNG",
-    imgMobile: "/projects/Interval_mobile.PNG",
+    git: "https://github.com/AnetaFalkowska/kanban-flow",
+    link: "https://kanban-board-af.onrender.com",
+    imgDesktop: "/projects/Kanban_desktop.PNG",
+    imgTablet: "/projects/Kanban_tablet.PNG",    
   },
   {
-    id: "p2",
+    id: "p3",
     title: "Recipe keeper",
     description:
       "When building this React app, I ventured into developing a Node.js backend as an experimental project to support the frontend. This project enhanced my skills in full-stack development, including React Router for navigation, API integration, state management, and asynchronous programming. The app enables users to discover, create, and manage recipes, providing a seamless user experience through the integration of both server-stored and internet-sourced data.",
@@ -310,9 +307,61 @@ export const projectData = [
     imgTablet: "/projects/Recipe_tablet.PNG",
     imgMobile: "/projects/Recipe_mobile.PNG",
   },
-
   {
-    id: "p3",
+    id: "p2",
+    title: "Interval Timer",
+    description: `I built this app as an experiment to dive into asynchronous programming and state management using pure JavaScript. This project helped me refine skills in DOM manipulation, local data management, and integrating libraries and frameworks. The app allows users manage and customize interval-based workouts with automated phase timing and transitions.`,
+    techStack: ["JavaScript", "HTML", "CSS3", "Bootstrap"],
+    keyFeatures: [
+      {
+        name: "Modular Code Structure",
+        description:
+          "Divides functionality (validation, time conversion, data handling) into reusable modules.",
+      },
+      {
+        name: "Local Storage",
+        description: "Used to save user-generated exercises.",
+      },
+      {
+        name: "Asynchronous Control with Promise Chaining",
+        description:
+          "Uses promise chaining to manage the sequential flow of exercise phases, simplifying asynchronous control flow.",
+      },
+      {
+        name: "Dynamic DOM Management",
+        description:
+          "Creates and updates the DOM dynamically, managing forms and UI elements based on user interactions.",
+      },
+      {
+        name: "Countdown Feature",
+        description:
+          "Includes audio cues for phase transitions using the HTML5 Audio API.",
+      },
+      {
+        name: "Form Validation",
+        description:
+          "Prevents invalid data from being saved and provides feedback to the user.",
+      },
+      {
+        name: "Bootstrap UI Components",
+        description:
+          "Ensures a responsive, consistent UI for user interactions.",
+      },
+      {
+        name: "Modal Dialogs",
+        description:
+          "Utilizes Bootstrap modal dialogs for operations such as saving exercises and confirming deletions.",
+      },
+    ],
+    git: "https://github.com/AnetaFalkowska/Interval-Timer-App",
+    link: "https://interval-timer-app.onrender.com",
+    imgDesktop: "/projects/Interval_desktop.PNG",
+    imgTablet: "/projects/Interval_tablet.PNG",
+    imgMobile: "/projects/Interval_mobile.PNG",
+  },
+  
+  {
+    id: "p1",
     title: "Portfolio Web Application",
     description:
       "This project allowed me to refine my knowledge of React, component-based architecture, and responsive design. It features up-to-date frontend methods, employing TypeScript for type safety and Tailwind CSS for efficient styling.",
@@ -366,7 +415,13 @@ export const projectData = [
 
 export const technologies = [
   {
-    name: "React JS",
+    name: "Angular",
+    icon: angularIcon,
+    description:
+      "Developing interactive single-page applications (SPAs) with efficient state management.",
+  },
+  {
+    name: "React",
     icon: reactIcon,
     description:
       "Developing interactive single-page applications (SPAs) with efficient state management.",
@@ -393,16 +448,16 @@ export const technologies = [
     icon: cssIcon,
     description: "Creating advanced layouts with Flexbox and CSS Grid.",
   },
-  {
-    name: "React Router",
-    icon: routerIcon,
-    description: "",
-  },
-  {
-    name: "Redux",
-    icon: reduxIcon,
-    description: "",
-  },
+  // {
+  //   name: "React Router",
+  //   icon: routerIcon,
+  //   description: "",
+  // },
+  // {
+  //   name: "Redux",
+  //   icon: reduxIcon,
+  //   description: "",
+  // },
   {
     name: "Git",
     icon: gitIcon,
