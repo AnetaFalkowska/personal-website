@@ -109,6 +109,7 @@ export default function Resume() {
                 <p>Phone</p>
                 <p>Email</p>
                 <p>Github</p>
+                <p>LinkedIn</p>
               </div>
               <div className="space-y-2">
                 <p className="ml-4">502 394 679</p>
@@ -116,6 +117,7 @@ export default function Resume() {
                 <p className="ml-4">aneta.falkowska@gmail.com</p>
 
                 <p className="ml-4">https://github.com/AnetaFalkowska</p>
+                <p className="ml-4">https://www.linkedin.com/in/aneta-f-947b07272</p>
               </div>
             </div>
           </Container>
