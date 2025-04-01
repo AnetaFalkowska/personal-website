@@ -7,8 +7,6 @@ import cIcon from "../assets/techIcons/c.png";
 import gitIcon from "../assets/techIcons/git.png";
 import twIcon from "../assets/techIcons/tailwind.png";
 import tsIcon from "../assets/techIcons/typescript.png";
-import reduxIcon from "../assets/techIcons/redux.png";
-import routerIcon from "../assets/techIcons/router.png";
 import bootstrapIcon from "../assets/techIcons/bootstrap.png";
 import cyclingIcon from "../assets/hobbyIcons/exercise.png";
 import climbingIcon from "../assets/hobbyIcons/carrabiner.png";
