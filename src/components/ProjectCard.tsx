@@ -55,17 +55,18 @@ export default function ProjectCard({
               />
             </a>
           )}
-
-          <a
-            href={link}
-            className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-xl top-[88%] left-[14%] tablet-shadow z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:tablet-shadow-hover active:scale-95"
-          >
-            <img
-              src={imgTablet}
-              alt={`${title} screenshot`}
-              className="rounded-xl object-cover"
-            />
-          </a>
+          {imgTablet && (
+            <a
+              href={link}
+              className="hidden lg:inline-block absolute overflow-hidden w-[50%] rounded-xl top-[88%] left-[14%] tablet-shadow z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:tablet-shadow-hover active:scale-95"
+            >
+              <img
+                src={imgTablet}
+                alt={`${title} screenshot`}
+                className="rounded-xl object-cover"
+              />
+            </a>
+          )}
         </div>
 
         <div className="flex-1">

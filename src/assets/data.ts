@@ -7,6 +7,7 @@ import cIcon from "../assets/techIcons/c.png";
 import gitIcon from "../assets/techIcons/git.png";
 import twIcon from "../assets/techIcons/tailwind.png";
 import tsIcon from "../assets/techIcons/typescript.png";
+import rxJS from "../assets/techIcons/rxjs.png";
 import bootstrapIcon from "../assets/techIcons/bootstrap.png";
 import cyclingIcon from "../assets/hobbyIcons/exercise.png";
 import climbingIcon from "../assets/hobbyIcons/carrabiner.png";
@@ -74,15 +75,15 @@ export const resumeData = {
 };
 
 export const skills = {
-  technicalSkills: [
-    { title: "JavaScript", level: "Advanced" },
-    { title: "HTML", level: " Advanced" },
-    { title: "CSS", level: "Advanced" },
+  technicalSkills: [    
     { title: "Angular", level: "Intermediate" },
-    { title: "React", level: "Intermediate" },    
+    { title: "React", level: "Intermediate" }, 
+    { title: "JavaScript", level: "Intermediate" },  
     { title: "TypeScript", level: "Intermediate" },
-    { title: "Tailwind", level: "Intermediate" },
-
+    { title: "RxJS", level: "Intermediate" },
+    { title: "HTML", level: "Intermediate" },
+    { title: "CSS", level: "Intermediate" },
+    { title: "Tailwind", level: "Intermediate" },   
   ],
   softSkills: [
     "English - Advanced",
@@ -203,7 +204,7 @@ export const projectData = [
       },
       {
         name: "Animations & Transitions",
-        description: "Applies smooth Angular animations for seamless transitions and interactions between views."
+        description: "Applies Angular animations for seamless transitions and interactions between views."
       },
       {
         name: "State Management & Context Handling",
@@ -211,7 +212,7 @@ export const projectData = [
       },
       {
         name: "Reactive Forms & Validation",
-        description: "Implements built-in and custom form validations to ensure data integrity."
+        description: "Manages dynamic fields and ensures data integrity with custom validations."
       },
       {
         name: "API Integration & CRUD Operations",
@@ -229,7 +230,7 @@ export const projectData = [
     git: "https://github.com/AnetaFalkowska/kanban-flow",
     link: "https://kanban-board-af.onrender.com",
     imgDesktop: "/projects/Kanban_desktop.PNG",
-    imgTablet: "/projects/Kanban_tablet.PNG",    
+    imgTablet: "",    
   },
   {
     id: "p3",
@@ -416,7 +417,7 @@ export const technologies = [
     name: "Angular",
     icon: angularIcon,
     description:
-      "Developing interactive single-page applications (SPAs) with efficient state management.",
+      "Building scalable applications with Angular, including reactive forms and HTTP client services.",
   },
   {
     name: "React",
@@ -435,6 +436,11 @@ export const technologies = [
     icon: tsIcon,
     description:
       "Developing scalable applications with TypeScript, ensuring type safety and code quality.",
+  },
+  {
+    name: "RxJS",
+    icon: rxJS,
+    description: "Implementing reactive programming and observables for efficient data handling.",
   },
   {
     name: "HTML5",
@@ -476,7 +482,7 @@ export const technologies = [
   {
     name: "Bootstrap",
     icon: bootstrapIcon,
-    description: "",
+    description: "Creating responsive and mobile-first designs with Bootstrap.",
   },
 ];
 
