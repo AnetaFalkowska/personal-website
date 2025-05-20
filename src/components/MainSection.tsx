@@ -49,7 +49,7 @@ function ProfileSection() {
           <main className="text-gray-600">
             Frontend Developer with a strong foundation in project management
             and key account expertise. Currently focused on building responsive
-            web applications using React, JavaScript, HTML and CSS. I excel in
+            web applications using Angular, React, JavaScript, HTML and CSS. I excel in
             cross-team collaboration, problem-solving, and delivering
             client-focused solutions. My analytical mindset and ability to work
             under pressure enable me to translate complex requirements into
